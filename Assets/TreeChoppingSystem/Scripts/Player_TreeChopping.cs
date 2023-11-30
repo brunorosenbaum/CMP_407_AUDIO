@@ -16,9 +16,18 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     [SerializeField] private GameObject fxTreeHit;
     [SerializeField] private GameObject fxTreeHitBlocks;
 
+    public CharacterController controller;
+    public float speed = 10f;
+    public float gravity = -9.8f;
+    public Transform groundCheck;
+    public float groundDistance = 0.4f;
+    public LayerMask groundMask;
+
+    private Vector3 velocity;
+    private bool isGrounded;
+    public float jumpHeight = 3f; 
 
     private void Awake() {
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void AnimationEvent_OnHit() {
@@ -56,39 +65,59 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
         }
     }
 
-    private void HandleMovement() {
-        float moveX = 0f;
-        float moveZ = 0f;
+    private void HandleMovement()
+    {
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.W)) {
-            moveZ = +1f;
-        }
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.S)) {
-            moveZ = -1f;
-        }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.A)) {
-            moveX = -1f;
-        }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.D)) {
-            moveX = +1f;
-        }
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        if (moveX != 0 || moveZ != 0) {
-            // Not idle
-            if (animator != null) animator.SetBool("IsWalking", true);
-        } else {
-            if (animator != null) animator.SetBool("IsWalking", false);
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f; 
         }
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
 
-        Vector3 moveDir = (new Vector3(cameraTransform.forward.x, 0f, cameraTransform.forward.z) * moveZ) +
-            (new Vector3(cameraTransform.right.x, 0f, cameraTransform.right.z) * moveX);
-        moveDir = moveDir.normalized;
+        Vector3 move = transform.right * x + transform.forward * z;
 
-        transform.forward = new Vector3(cameraTransform.forward.x, 0f, cameraTransform.forward.z);
-        float moveSpeed = 3f;
-        transform.position += moveDir * moveSpeed * Time.deltaTime;
+        controller.Move(move * speed * Time.deltaTime);
 
-        visualTransform.localPosition += -visualTransform.localPosition * Time.deltaTime * .5f;
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity); 
+        }
+        velocity.y += gravity * Time.deltaTime;
+
+        controller.Move(velocity * Time.deltaTime); 
+
+        //if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.W)) {
+        //    moveZ = +1f;
+        //}
+        //if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.S)) {
+        //    moveZ = -1f;
+        //}
+        //if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.A)) {
+        //    moveX = -1f;
+        //}
+        //if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.D)) {
+        //    moveX = +1f;
+        //}
+
+        //if (moveX != 0 || moveZ != 0) {
+        //    // Not idle
+        //    if (animator != null) animator.SetBool("IsWalking", true);
+        //} else {
+        //    if (animator != null) animator.SetBool("IsWalking", false);
+        //}
+
+        //Vector3 moveDir = (new Vector3(cameraTransform.forward.x, 0f, cameraTransform.forward.z) * moveZ) +
+        //    (new Vector3(cameraTransform.right.x, 0f, cameraTransform.right.z) * moveX);
+        //moveDir = moveDir.normalized;
+
+        //transform.forward = new Vector3(cameraTransform.forward.x, 0f, cameraTransform.forward.z);
+        //float moveSpeed = 3f;
+        //transform.position += moveDir * moveSpeed * Time.deltaTime;
+
+        //visualTransform.localPosition += -visualTransform.localPosition * Time.deltaTime * .5f;
     }
 
     public void Damage(int amount) {
