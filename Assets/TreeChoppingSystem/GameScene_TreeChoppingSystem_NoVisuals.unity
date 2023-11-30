@@ -3385,6 +3385,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpHeight: 3
+  footstep:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a7cb25cfc6df8fe40a1a3b68bc17786e, type: 2}
+  footstepRate: 0.3
 --- !u!54 &1196206560
 Rigidbody:
   m_ObjectHideFlags: 0

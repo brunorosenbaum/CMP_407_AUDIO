@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="CMP_407_AUDIO_WwiseProject" GUID="{241F8BBB-D7CE-4A83-BA95-475C5BE200E6}" Generator="2023.1.0.8367"/>
+	<CacheRoot>../../../../CMP_407_AUDIO_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{22066065-5904-4A97-BE11-B9E2850FD81A}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../CMP_407_AUDIO_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{3C5D0084-436E-4CC4-A0B2-A1EB707B2EF5}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../CMP_407_AUDIO_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{DC09790A-ECF0-4FDC-ACA3-283B55A1437A}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{36C54765-C225-3CA9-8395-0F0E26963B4C}</FileHash>
+</ProjectInfo>

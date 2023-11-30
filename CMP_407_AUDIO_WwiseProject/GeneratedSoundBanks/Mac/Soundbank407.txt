@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1866025847	Footstep			\Default Work Unit\Footstep	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	134875293	footstep_1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\footstep_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep_1		91816
+	417166193	footstep_3	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\footstep_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep_3		229396
+	592123486	footstep_2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\footstep_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep_2		116744
+

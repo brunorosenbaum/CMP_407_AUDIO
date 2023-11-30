@@ -5,6 +5,8 @@ using UnityEngine;
 using Cinemachine;
 using CodeMonkey.Utils;
 using CodeMonkey;
+using Microsoft.Cci;
+using Unity.VisualScripting;
 
 public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
@@ -16,6 +18,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     [SerializeField] private GameObject fxTreeHit;
     [SerializeField] private GameObject fxTreeHitBlocks;
 
+    //Movement
     public CharacterController controller;
     public float speed = 10f;
     public float gravity = -9.8f;
@@ -25,10 +28,18 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
     private Vector3 velocity;
     private bool isGrounded;
-    public float jumpHeight = 3f; 
+    public float jumpHeight = 3f;
 
-    private void Awake() {
-    }
+    //Sound
+    public AK.Wwise.Event footstep = new AK.Wwise.Event();
+    private bool isWalking = false;
+    private float walkCount = 0.0f;
+    /// The speed at which footstep sounds are triggered.
+    [Range(0.01f, 1.0f)] public float footstepRate = 0.3f;
+    ///	Used to ensure we play the Jump Land sound when we hit the ground.
+    private bool isJumping = false;
+    ///	Used to ensure we don't trigger a false Jump Land when the game starts.
+    private int inAirCount = 16;
 
     private void AnimationEvent_OnHit() {
         // Find objects in Hit Area
@@ -56,6 +67,43 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     private void Update() {
         HandleAttack();
         HandleMovement();
+
+
+        if (((Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.0f) ||
+             (Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.0f)))
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
+
+            walkCount = footstepRate;
+        }
+
+        if (!controller.isGrounded) //If controller isnt grounded its jumping
+            isJumping = true;
+        else 
+        {
+            if (isJumping && (inAirCount < 1)) //
+                //jumpLandSound.Post(gameObject);
+
+                isJumping = false;
+        }
+        if (inAirCount > 0)
+            --inAirCount;
+
+        if (isWalking && !isJumping)
+        {
+            walkCount += Time.deltaTime * (speed / 10.0f);
+
+            if (walkCount > footstepRate)
+            {
+                footstep.Post(gameObject);
+
+                walkCount = 0.0f;
+            }
+        }
     }
 
     private void HandleAttack() {
@@ -83,7 +131,10 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity); 
+
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            //jumpSound.Post(gameObject);
+
         }
         velocity.y += gravity * Time.deltaTime;
 
