@@ -7,6 +7,7 @@ using CodeMonkey.Utils;
 using CodeMonkey;
 using Microsoft.Cci;
 using Unity.VisualScripting;
+using UnityEngine.Serialization;
 
 public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
@@ -17,6 +18,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     [SerializeField] private GameObject hitArea;
     [SerializeField] private GameObject fxTreeHit;
     [SerializeField] private GameObject fxTreeHitBlocks;
+
 
     //Movement
     public CharacterController controller;
@@ -30,7 +32,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     private bool isGrounded;
     public float jumpHeight = 3f;
 
-    //Sound
+    //Sound footsteps
     public AK.Wwise.Event footstep = new AK.Wwise.Event();
     private bool isWalking = false;
     private float walkCount = 0.0f;
@@ -41,12 +43,64 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     ///	Used to ensure we don't trigger a false Jump Land when the game starts.
     private int inAirCount = 16;
 
+    //Sound woodchopping 
+    public AK.Wwise.Switch birchSwitch;
+    public AK.Wwise.Switch elmSwitch;
+    public AK.Wwise.Switch pineSwitch;
+
+    [FormerlySerializedAs("woodChop")] public AK.Wwise.Event woodChopping; 
+
+
+    private void testMethod()
+    {
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            birchSwitch.SetValue(this.gameObject);
+            woodChopping.Post(this.gameObject);
+
+        } 
+        
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            elmSwitch.SetValue(this.gameObject);
+            woodChopping.Post(this.gameObject);
+
+        }
+    }
     private void AnimationEvent_OnHit() {
         // Find objects in Hit Area
         Vector3 colliderSize = Vector3.one * .3f;
         Collider[] colliderArray = Physics.OverlapBox(hitArea.transform.position, colliderSize);
         foreach (Collider collider in colliderArray) {
             if (collider.TryGetComponent<ITreeDamageable>(out ITreeDamageable treeDamageable)) {
+
+                //Play wood chopping sound
+                if (collider.TryGetComponent<Tree>(out Tree tree))
+                {
+
+                    switch (tree.tag)
+                    {
+                        case "BirchTree":
+                            Debug.Log("Birch");
+
+                            birchSwitch.SetValue(this.gameObject);
+                            break;
+                        case "ElmTree":
+                            Debug.Log("Elm");
+
+                            elmSwitch.SetValue(this.gameObject);
+                            break;
+                        case "PineTree":
+                            Debug.Log("Pine");
+
+                            pineSwitch.SetValue(this.gameObject);
+                            break; 
+                    }
+                    woodChopping.Post(this.gameObject);
+                }
+
+
+
                 // Damage Popup
                 int damageAmount = UnityEngine.Random.Range(10, 30);
                 DamagePopup.Create(hitArea.transform.position, damageAmount, damageAmount > 14);
@@ -54,6 +108,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
                 // Damage Tree
                 treeDamageable.Damage(damageAmount);
 
+                
                 // Shake Camera
                 treeShake.GenerateImpulse();
 
@@ -67,7 +122,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     private void Update() {
         HandleAttack();
         HandleMovement();
-
+        testMethod();
 
         if (((Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.0f) ||
              (Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.0f)))

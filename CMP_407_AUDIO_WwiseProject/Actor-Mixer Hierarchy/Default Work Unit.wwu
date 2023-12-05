@@ -18,8 +18,8 @@
 									<Modifier Name="" ID="{E4B3CA6C-F671-46CE-AA2B-972289925D9C}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="150"/>
-											<Property Name="Min" Type="Real64" Value="-150"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -35,7 +35,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="footstep_1" ID="{D0AE21C7-71A0-46AC-A312-F1161EEEADEE}" ShortID="823829817">
+						<Sound Name="footstep_1" ID="{30F38CBF-2C1D-4BCA-B4E2-B439D015772C}" ShortID="403542297">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
@@ -45,7 +45,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="footstep_1" ID="{4B359C30-32BE-453A-8CBB-00B493A15B2D}">
+								<AudioFileSource Name="footstep_1" ID="{61122613-99F0-4283-954C-A4D52ED403B2}">
 									<Language>SFX</Language>
 									<AudioFile>footstep_1.wav</AudioFile>
 									<MediaIDList>
@@ -54,10 +54,10 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="footstep_1" ID="{4B359C30-32BE-453A-8CBB-00B493A15B2D}" Platform="Linked"/>
+								<ActiveSource Name="footstep_1" ID="{61122613-99F0-4283-954C-A4D52ED403B2}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="footstep_2" ID="{2FFCC22F-8515-4758-8F07-9A787C476102}" ShortID="1017903230">
+						<Sound Name="footstep_2" ID="{97894BD2-F01A-4800-AA8C-7F89505404D0}" ShortID="606084985">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
@@ -67,7 +67,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="footstep_2" ID="{58F47992-007B-45B9-9B93-6F8C5E531F20}">
+								<AudioFileSource Name="footstep_2" ID="{7E37E76E-3FCF-4E09-9F3A-4173102D1D67}">
 									<Language>SFX</Language>
 									<AudioFile>footstep_2.wav</AudioFile>
 									<MediaIDList>
@@ -76,10 +76,10 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="footstep_2" ID="{58F47992-007B-45B9-9B93-6F8C5E531F20}" Platform="Linked"/>
+								<ActiveSource Name="footstep_2" ID="{7E37E76E-3FCF-4E09-9F3A-4173102D1D67}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="footstep_3" ID="{0209BEEB-E9D9-40AB-B6EB-3CA52AB50B1D}" ShortID="1030059413">
+						<Sound Name="footstep_3" ID="{D0AA3DB1-866C-41C2-AF12-EC838494AC0B}" ShortID="694448032">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
@@ -89,7 +89,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="footstep_3" ID="{740D29B7-1DAC-4271-9590-8F2F43B4CDE5}">
+								<AudioFileSource Name="footstep_3" ID="{E33569B8-5A50-4D54-A752-84DFE53D63D0}">
 									<Language>SFX</Language>
 									<AudioFile>footstep_3.wav</AudioFile>
 									<MediaIDList>
@@ -98,11 +98,199 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="footstep_3" ID="{740D29B7-1DAC-4271-9590-8F2F43B4CDE5}" Platform="Linked"/>
+								<ActiveSource Name="footstep_3" ID="{E33569B8-5A50-4D54-A752-84DFE53D63D0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<SwitchContainer Name="WoodChopping" ID="{16386F3D-EE6B-45F7-AE3C-2477574417BA}" ShortID="744318501">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{67F08AAB-718C-475C-A9BC-5C8EF605A093}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1C667E83-E5EE-4756-B87D-BC7A67421866}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="5"/>
+											<Property Name="Min" Type="Real64" Value="-5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Birch" ID="{D2829B5F-5C44-42B2-A0F2-4852EC903F37}" WorkUnitID="{DF89ADB0-7E26-4155-9E76-2D1180DA1B2F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Woodchopping" ID="{321EC1FB-782C-49B5-BA84-F8512C61890D}" WorkUnitID="{DF89ADB0-7E26-4155-9E76-2D1180DA1B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Birch" ID="{D64D6349-8DDD-416B-9C24-27381242C963}" ShortID="882979387">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="tree1Chop" ID="{CE6A589D-A3E2-4CFA-B96E-9D1BD1295A0D}" ShortID="766000664">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4C704CA1-B7D0-4444-86AD-DC011A2CAE50}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="150"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tree1Chop" ID="{21C8C424-C3A8-45B1-82B8-B7571AE96AD9}">
+											<Language>SFX</Language>
+											<AudioFile>tree1Chop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="597575265"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="tree1Chop" ID="{21C8C424-C3A8-45B1-82B8-B7571AE96AD9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Elm" ID="{99C64894-0251-4A7B-A176-7AFBFC93FB2A}" ShortID="637867400">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="tree2Chop" ID="{EC2ABB02-43A1-4540-9A41-232710D0C6A9}" ShortID="265112545">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tree2Chop" ID="{9718806D-F921-4B67-9C83-F00FAB91F66E}">
+											<Language>SFX</Language>
+											<AudioFile>tree2Chop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="254406503"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="tree2Chop" ID="{9718806D-F921-4B67-9C83-F00FAB91F66E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Pine" ID="{149944F4-F245-4373-A9A5-D09ABB69DE73}" ShortID="645831260">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="tree3Chop" ID="{744A9B49-93E8-48E9-9FB2-DB86BCEEBB3D}" ShortID="701185742">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tree3Chop" ID="{418697A0-1044-4E83-A9C1-91ECCAC3A73B}">
+											<Language>SFX</Language>
+											<AudioFile>tree3Chop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="455690643"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="tree3Chop" ID="{418697A0-1044-4E83-A9C1-91ECCAC3A73B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Birch" ID="{D64D6349-8DDD-416B-9C24-27381242C963}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Elm" ID="{99C64894-0251-4A7B-A176-7AFBFC93FB2A}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Pine" ID="{149944F4-F245-4373-A9A5-D09ABB69DE73}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Pine" ID="{EC71190A-2B01-44F7-B4C0-7C3A2458B8E7}"/>
+								<ItemList>
+									<ItemRef Name="Pine" ID="{149944F4-F245-4373-A9A5-D09ABB69DE73}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Birch" ID="{D2829B5F-5C44-42B2-A0F2-4852EC903F37}"/>
+								<ItemList>
+									<ItemRef Name="Birch" ID="{D64D6349-8DDD-416B-9C24-27381242C963}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Elm" ID="{2F8E8DB7-0BA4-48F1-B50E-FD22D647CBE3}"/>
+								<ItemList>
+									<ItemRef Name="Elm" ID="{99C64894-0251-4A7B-A176-7AFBFC93FB2A}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

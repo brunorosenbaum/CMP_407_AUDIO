@@ -1043,6 +1043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 377260737}
   - component: {fileID: 377260736}
+  - component: {fileID: 377260738}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1090,6 +1091,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377260738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377260735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b503d2ab106cbd14d9b044b5d83441c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a5d2d11b692840e47bf9b23b9697fac8, type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1001 &475115122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3390,6 +3416,28 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a7cb25cfc6df8fe40a1a3b68bc17786e, type: 2}
   footstepRate: 0.3
+  birchSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0743e31bcfb968846be162b70e4de26d, type: 2}
+  elmSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3be24bcfe286a2243a67760912547480, type: 2}
+  pineSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 135c3c2aeedabcb4f8b1e2a753692326, type: 2}
+  woodChop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6f08ed1c12f30b64cbcf86a306dcc73a, type: 2}
 --- !u!54 &1196206560
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4596,6 +4644,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1957006494}
     m_Modifications:
+    - target: {fileID: 3773260625930534558, guid: ecfa1330e52dd7c468b347b929549667, type: 3}
+      propertyPath: treeSpecies
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5987337183285097375, guid: ecfa1330e52dd7c468b347b929549667, type: 3}
       propertyPath: m_RootOrder
       value: 13

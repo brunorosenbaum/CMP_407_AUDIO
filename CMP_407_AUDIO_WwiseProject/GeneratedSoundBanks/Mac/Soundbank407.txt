@@ -1,8 +1,20 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1866025847	Footstep			\Default Work Unit\Footstep	
+	1990903982	Woodchopping			\Default Work Unit\Woodchopping	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1990903982	Woodchopping			\Default Work Unit\Woodchopping	
+
+Switch	ID	Name	Switch Group			Notes
+	335352537	Birch	Woodchopping			
+	563281707	Elm	Woodchopping			
+	1944526579	Pine	Woodchopping			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	134875293	footstep_1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\footstep_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep_1		91816
-	417166193	footstep_3	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\footstep_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep_3		229396
-	592123486	footstep_2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\footstep_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep_2		116744
+	134875293	footstep_1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\footstep_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep_1		86596
+	254406503	tree2Chop	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\tree2Chop_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\WoodChopping\Elm\tree2Chop		96096
+	417166193	footstep_3	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\footstep_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep_3		86688
+	455690643	tree3Chop	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\tree3Chop_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\WoodChopping\Pine\tree3Chop		97184
+	592123486	footstep_2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\footstep_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep_2		86600
+	597575265	tree1Chop	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\tree1Chop_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\WoodChopping\Birch\tree1Chop		96096
 

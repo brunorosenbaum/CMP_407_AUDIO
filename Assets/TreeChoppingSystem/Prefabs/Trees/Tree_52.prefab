@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5213703481532559369}
   m_Layer: 0
   m_Name: Tree_52
-  m_TagString: Untagged
+  m_TagString: BirchTree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,6 +55,24 @@ MonoBehaviour:
   treeLog: {fileID: 6544008936531603717, guid: 6b08130cd86fe6a47be82062b22f7259, type: 3}
   treeLogHalf: {fileID: 2809928136178568926, guid: 1ea0162ee3240cb4da48b4e894644cb6, type: 3}
   treeStump: {fileID: 3296910486322179457, guid: 0e4f9e55f699e094baf0dd81acdc22fd, type: 3}
+  birchSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0743e31bcfb968846be162b70e4de26d, type: 2}
+  elmSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3be24bcfe286a2243a67760912547480, type: 2}
+  pineSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 135c3c2aeedabcb4f8b1e2a753692326, type: 2}
 --- !u!136 &5213703481532559369
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -229,7 +247,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7fbe8b696b58aa14f8fbbae2e7fe1a0c, type: 2}
+  - {fileID: 2100000, guid: 6f24a59778252be4897ceeab66f731a3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

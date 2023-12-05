@@ -14,7 +14,24 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID WOODCHOPPING = 1990903982U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace WOODCHOPPING
+        {
+            static const AkUniqueID GROUP = 1990903982U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BIRCH = 335352537U;
+                static const AkUniqueID ELM = 563281707U;
+                static const AkUniqueID PINE = 1944526579U;
+            } // namespace SWITCH
+        } // namespace WOODCHOPPING
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

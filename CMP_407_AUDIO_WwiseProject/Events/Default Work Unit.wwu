@@ -3,9 +3,20 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Footstep" ID="{4C4F7B99-F02D-4E3D-92DD-87F80AB9828F}">
+				<Event Name="Woodchopping" ID="{57971F65-324D-4D91-B4A5-96D4B5CC98E5}">
 					<ChildrenList>
-						<Action Name="" ID="{4513ACFD-573F-4C19-90EB-2D77B43AFA2F}" ShortID="52727647">
+						<Action Name="" ID="{496F2D39-70FE-4D0D-974E-22C05A973D5E}" ShortID="488039420">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WoodChopping" ID="{16386F3D-EE6B-45F7-AE3C-2477574417BA}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footstep" ID="{8AA9D53C-EDC7-4C7C-B975-E20E1E163892}">
+					<ChildrenList>
+						<Action Name="" ID="{1C1A7885-E7C3-404A-9DBF-B7825EE8F900}" ShortID="430569081">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Footsteps" ID="{7D0E2E83-8CFC-43CA-84B9-A267AB08714F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>

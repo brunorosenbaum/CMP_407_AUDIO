@@ -13,7 +13,16 @@ public class Tree : MonoBehaviour, ITreeDamageable {
         Stump
     }
 
+    //public enum Species
+    //{
+    //    Birch, 
+    //    Pine, 
+    //    Elm
+    //}
+
+
     [SerializeField] private Type treeType;
+    //[SerializeField] public Species treeSpecies;
     [SerializeField] private Transform fxTreeDestroyed;
     [SerializeField] private Transform fxTreeLogDestroyed;
     [SerializeField] private Transform fxTreeLogHalfDestroyed;
@@ -23,6 +32,9 @@ public class Tree : MonoBehaviour, ITreeDamageable {
     [SerializeField] private Transform treeStump;
 
     private HealthSystem healthSystem;
+    //public AK.Wwise.Switch birchSwitch;
+    //public AK.Wwise.Switch elmSwitch;
+    //public AK.Wwise.Switch pineSwitch;
 
     private void Awake() {
         int healthAmount;
@@ -37,6 +49,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
 
         healthSystem = new HealthSystem(healthAmount);
         healthSystem.OnDead += HealthSystem_OnDead;
+        //treetypeSwitch.SetValue(this.gameObject);
     }
 
     private void HealthSystem_OnDead(object sender, System.EventArgs e) {
@@ -86,7 +99,20 @@ public class Tree : MonoBehaviour, ITreeDamageable {
 
     private void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.TryGetComponent<ITreeDamageable>(out ITreeDamageable treeDamageable)) {
-            if (collision.relativeVelocity.magnitude > 1f) {
+            if (collision.relativeVelocity.magnitude > 1f)
+            {
+                ////Play chopping sound depending on tree species
+                //switch (treeSpecies)
+                //{
+                //    default:
+                //    case Species.Birch:
+                        
+                //        break;
+                //    case Species.Elm:
+                //        break;
+                //    case Species.Pine:
+                //        break;
+                //}
                 int damageAmount = Random.Range(5, 20);
                 DamagePopup.Create(collision.GetContact(0).point, damageAmount, damageAmount > 14);
                 treeDamageable.Damage(damageAmount);

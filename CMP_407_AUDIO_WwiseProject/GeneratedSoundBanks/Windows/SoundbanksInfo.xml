@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{5362627A-12A0-E31E-5620-841BC42E1633}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{C75D5A6F-5DBD-C1D7-E9DE-C3FCF89C4953}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -17,24 +17,67 @@
 					<ShortName>footstep_1.wav</ShortName>
 					<CachePath>SFX/footstep_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="254406503" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>tree2Chop.wav</ShortName>
+					<CachePath>SFX/tree2Chop_818F3B66.wem</CachePath>
+				</File>
 				<File Id="417166193" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_3.wav</ShortName>
 					<CachePath>SFX/footstep_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="455690643" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>tree3Chop.wav</ShortName>
+					<CachePath>SFX/tree3Chop_818F3B66.wem</CachePath>
 				</File>
 				<File Id="592123486" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_2.wav</ShortName>
 					<CachePath>SFX/footstep_2_818F3B66.wem</CachePath>
 				</File>
+				<File Id="597575265" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>tree1Chop.wav</ShortName>
+					<CachePath>SFX/tree1Chop_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
-				<Event Id="1866025847" Name="Footstep" DurationType="OneShot" DurationMin="0.4380605" DurationMax="1.3023729">
+				<Event Id="1866025847" Name="Footstep" DurationType="OneShot" DurationMin="0.38994226" DurationMax="0.5210641">
 					<MediaRefs>
 						<MediaRef Id="134875293"/>
 						<MediaRef Id="417166193"/>
 						<MediaRef Id="592123486"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1990903982" Name="Woodchopping" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5056667">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1990903982" Id="1944526579"/>
+							<MediaRefs>
+								<MediaRef Id="455690643"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1990903982" Id="335352537" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="597575265"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1990903982" Id="563281707"/>
+							<MediaRefs>
+								<MediaRef Id="254406503"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1990903982" Name="Woodchopping">
+					<Switches>
+						<Switch Id="335352537" Name="Birch"/>
+						<Switch Id="563281707" Name="Elm"/>
+						<Switch Id="1944526579" Name="Pine"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
 			<ShortName>Init</ShortName>
@@ -48,7 +91,16 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="1990903982" Name="Woodchopping">
+					<Switches>
+						<Switch Id="335352537" Name="Birch"/>
+						<Switch Id="563281707" Name="Elm"/>
+						<Switch Id="1944526579" Name="Pine"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F3D7DA07-E0CE-6C51-78B0-D62FE96ABD3D}</FileHash>
+	<FileHash>{2F0A5196-BB69-4CAF-0D97-D998A30A0900}</FileHash>
 </SoundBanksInfo>

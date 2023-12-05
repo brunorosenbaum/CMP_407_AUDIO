@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82e79d22861a1f942a5f3c34080e1b83, type: 3}
+  m_Name: DE0F9894-C096-4A74-B896-10301C62C662
+  m_EditorClassIdentifier: 
+  objectName: Pine
+  id: 1944526579
+  guid: DE0F9894-C096-4A74-B896-10301C62C662
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: e0ca3f005fc78c9419242b163e79d675, type: 2}

@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: 997b4f4c2df03d4e92dd87f80ab9828f
       Path: Events\Default Work Unit\Footstep
       maxAttenuation: 0
-      maxDuration: 1.5941741
-      minDuration: 0.3578769
+      maxDuration: 0.5210641
+      minDuration: 0.38994226
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -170,7 +170,7 @@ MonoBehaviour:
     m_lastTime: -8585003227769536901
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000b0000000c000000
+  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f00000010000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
