@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: -8162869694964223703}
   - component: {fileID: 8461451750804391028}
   m_Layer: 0
-  m_Name: Tree_37
+  m_Name: Pine
   m_TagString: PineTree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,9 +150,9 @@ MonoBehaviour:
   fxTreeLogDestroyed: {fileID: 1408080632602542178, guid: 319beebd4e446db4c99d7c1fcfa8eee3, type: 3}
   fxTreeLogHalfDestroyed: {fileID: 1408080632602542178, guid: f0389c2f70408d249bc85a77e330538e, type: 3}
   fxTreeStumpDestroyed: {fileID: 1408080632602542178, guid: 41764277060e83e45a5deb085c41cf65, type: 3}
-  treeLog: {fileID: 6544008936531603717, guid: 6b08130cd86fe6a47be82062b22f7259, type: 3}
-  treeLogHalf: {fileID: 2809928136178568926, guid: 1ea0162ee3240cb4da48b4e894644cb6, type: 3}
-  treeStump: {fileID: 8372748528969190668, guid: b83d717870547cc4282774f0bb349a9c, type: 3}
+  treeLog: {fileID: 6544008936531603717, guid: 8534c5465b2099a4e80c001152a5e558, type: 3}
+  treeLogHalf: {fileID: 2809928136178568926, guid: 28dd1a7b416359d43bacd52c694a0375, type: 3}
+  treeStump: {fileID: 3296910486322179457, guid: cba152b86403b3f4e9fa24b1b6b2fe01, type: 3}
   speciesSwitch:
     idInternal: 0
     valueGuidInternal: 

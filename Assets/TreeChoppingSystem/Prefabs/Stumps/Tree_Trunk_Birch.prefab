@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4546896391867831492}
   - component: {fileID: -6269332498581723747}
   m_Layer: 0
-  m_Name: Tree_Trunk_5
+  m_Name: Tree_Trunk_Birch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,6 +69,12 @@ MonoBehaviour:
   treeLog: {fileID: 6544008936531603717, guid: 6b08130cd86fe6a47be82062b22f7259, type: 3}
   treeLogHalf: {fileID: 2809928136178568926, guid: 1ea0162ee3240cb4da48b4e894644cb6, type: 3}
   treeStump: {fileID: 3296910486322179457}
+  speciesSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fdee1174ba197824e94b67185e7a9876, type: 2}
 --- !u!1 &3745808402404806254
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +137,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9bd171756c7b831448c35f5202ceb662, type: 2}
+  - {fileID: 2100000, guid: 2ca6e0dfaf151e548b663ce0606e4677, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -229,7 +235,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dc12d5b62e9d26045ad24c3ee1b18695, type: 2}
+  - {fileID: 2100000, guid: 6f24a59778252be4897ceeab66f731a3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ba2ef61b6fd452c49aae73fa195e985a, type: 2}
+  - {fileID: 2100000, guid: 8c1f79feda3431d4e878591bf764a930, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 5988849517688037386}
   - component: {fileID: 8080625504895149596}
   m_Layer: 0
-  m_Name: Log_4
+  m_Name: Log_Pine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -280,5 +280,11 @@ MonoBehaviour:
   fxTreeLogHalfDestroyed: {fileID: 1408080632602542178, guid: f0389c2f70408d249bc85a77e330538e, type: 3}
   fxTreeStumpDestroyed: {fileID: 1408080632602542178, guid: 41764277060e83e45a5deb085c41cf65, type: 3}
   treeLog: {fileID: 6544008936531603717}
-  treeLogHalf: {fileID: 2809928136178568926, guid: 1ea0162ee3240cb4da48b4e894644cb6, type: 3}
-  treeStump: {fileID: 3507682078544694460, guid: 8df91b7fd9bad6946a8784bc4c178b12, type: 3}
+  treeLogHalf: {fileID: 2809928136178568926, guid: 28dd1a7b416359d43bacd52c694a0375, type: 3}
+  treeStump: {fileID: 3296910486322179457, guid: cba152b86403b3f4e9fa24b1b6b2fe01, type: 3}
+  speciesSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 36e2f4ced73d28e4bb7d136ab353dc16, type: 2}

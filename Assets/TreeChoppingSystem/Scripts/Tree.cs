@@ -13,16 +13,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
         Stump
     }
 
-    //public enum Species
-    //{
-    //    Birch, 
-    //    Pine, 
-    //    Elm
-    //}
-
-
     [SerializeField] private Type treeType;
-    //[SerializeField] public Species treeSpecies;
     [SerializeField] private Transform fxTreeDestroyed;
     [SerializeField] private Transform fxTreeLogDestroyed;
     [SerializeField] private Transform fxTreeLogHalfDestroyed;
