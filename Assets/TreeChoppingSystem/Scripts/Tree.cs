@@ -32,9 +32,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
     [SerializeField] private Transform treeStump;
 
     private HealthSystem healthSystem;
-    //public AK.Wwise.Switch birchSwitch;
-    //public AK.Wwise.Switch elmSwitch;
-    //public AK.Wwise.Switch pineSwitch;
+    public AK.Wwise.Switch speciesSwitch;
 
     private void Awake() {
         int healthAmount;

@@ -44,29 +44,13 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     private int inAirCount = 16;
 
     //Sound woodchopping 
-    public AK.Wwise.Switch birchSwitch;
-    public AK.Wwise.Switch elmSwitch;
-    public AK.Wwise.Switch pineSwitch;
+    //public AK.Wwise.Switch birchSwitch;
+    //public AK.Wwise.Switch elmSwitch;
+    //public AK.Wwise.Switch pineSwitch;
 
     [FormerlySerializedAs("woodChop")] public AK.Wwise.Event woodChopping; 
 
 
-    private void testMethod()
-    {
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            birchSwitch.SetValue(this.gameObject);
-            woodChopping.Post(this.gameObject);
-
-        } 
-        
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            elmSwitch.SetValue(this.gameObject);
-            woodChopping.Post(this.gameObject);
-
-        }
-    }
     private void AnimationEvent_OnHit() {
         // Find objects in Hit Area
         Vector3 colliderSize = Vector3.one * .3f;
@@ -77,26 +61,8 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
                 //Play wood chopping sound
                 if (collider.TryGetComponent<Tree>(out Tree tree))
                 {
-
-                    switch (tree.tag)
-                    {
-                        case "BirchTree":
-                            Debug.Log("Birch");
-
-                            birchSwitch.SetValue(this.gameObject);
-                            break;
-                        case "ElmTree":
-                            Debug.Log("Elm");
-
-                            elmSwitch.SetValue(this.gameObject);
-                            break;
-                        case "PineTree":
-                            Debug.Log("Pine");
-
-                            pineSwitch.SetValue(this.gameObject);
-                            break; 
-                    }
-                    woodChopping.Post(this.gameObject);
+                    tree.speciesSwitch.SetValue(gameObject);
+                    woodChopping.Post(gameObject);
                 }
 
 
@@ -122,7 +88,6 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     private void Update() {
         HandleAttack();
         HandleMovement();
-        testMethod();
 
         if (((Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.0f) ||
              (Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.0f)))

@@ -153,24 +153,12 @@ MonoBehaviour:
   treeLog: {fileID: 6544008936531603717, guid: 6b08130cd86fe6a47be82062b22f7259, type: 3}
   treeLogHalf: {fileID: 2809928136178568926, guid: 1ea0162ee3240cb4da48b4e894644cb6, type: 3}
   treeStump: {fileID: 8372748528969190668, guid: b83d717870547cc4282774f0bb349a9c, type: 3}
-  birchSwitch:
+  speciesSwitch:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0743e31bcfb968846be162b70e4de26d, type: 2}
-  elmSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3be24bcfe286a2243a67760912547480, type: 2}
-  pineSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 135c3c2aeedabcb4f8b1e2a753692326, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 36e2f4ced73d28e4bb7d136ab353dc16, type: 2}
 --- !u!136 &8461451750804391028
 CapsuleCollider:
   m_ObjectHideFlags: 0

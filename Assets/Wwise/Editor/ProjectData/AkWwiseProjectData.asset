@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7cee44ceb3472d4c882ea4fb97568433
     GuidInternal: 
-    m_lastTime: -8585002319318164249
+    m_lastTime: -8584997929663995640
     List:
     - name: Soundbank407
       guid: e3fb2f3a317a674bbd08e44ed1b832bc
@@ -94,10 +94,10 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8826e1b14e13434da5cdf4e90db0ee93
     GuidInternal: 
-    m_lastTime: -8585002331143166416
+    m_lastTime: -8584997929663905668
     List:
     - name: Footstep
-      guid: 997b4f4c2df03d4e92dd87f80ab9828f
+      guid: 3cd5a98ac7ed7c4cb975e20e1e163892
       id: 1866025847
       PathAndIcons:
       - ElementName: Events
@@ -108,11 +108,28 @@ MonoBehaviour:
         guid: 8826e1b14e13434da5cdf4e90db0ee93
       - ElementName: Footstep
         ObjectType: 3
-        guid: 997b4f4c2df03d4e92dd87f80ab9828f
+        guid: 3cd5a98ac7ed7c4cb975e20e1e163892
       Path: Events\Default Work Unit\Footstep
       maxAttenuation: 0
       maxDuration: 0.5210641
       minDuration: 0.38994226
+    - name: Woodchopping
+      guid: 651f97574d32914db4a596d4b5cc98e5
+      id: 1990903982
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: Woodchopping
+        ObjectType: 3
+        guid: 651f97574d32914db4a596d4b5cc98e5
+      Path: Events\Default Work Unit\Woodchopping
+      maxAttenuation: 0
+      maxDuration: 0.5056667
+      minDuration: 0.5
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -153,8 +170,74 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: b0ad89df267e55419e762d1180da1b2f
     GuidInternal: 
-    m_lastTime: -8585003227771187268
-    List: []
+    m_lastTime: -8584997933500229172
+    List:
+    - name: Woodchopping
+      guid: fbc11e322c78b549ba84f8512c61890d
+      id: 1990903982
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b0ad89df267e55419e762d1180da1b2f
+      - ElementName: Woodchopping
+        ObjectType: 11
+        guid: fbc11e322c78b549ba84f8512c61890d
+      Path: Switches\Default Work Unit\Woodchopping
+      values:
+      - name: Birch
+        guid: 5f9b82d2445cb242a0f24852ec903f37
+        id: 335352537
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b0ad89df267e55419e762d1180da1b2f
+        - ElementName: Woodchopping
+          ObjectType: 11
+          guid: fbc11e322c78b549ba84f8512c61890d
+        - ElementName: Birch
+          ObjectType: 10
+          guid: 5f9b82d2445cb242a0f24852ec903f37
+      - name: Elm
+        guid: b78d8e2fa40bf148b50efd22d647cbe3
+        id: 563281707
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b0ad89df267e55419e762d1180da1b2f
+        - ElementName: Woodchopping
+          ObjectType: 11
+          guid: fbc11e322c78b549ba84f8512c61890d
+        - ElementName: Elm
+          ObjectType: 10
+          guid: b78d8e2fa40bf148b50efd22d647cbe3
+      - name: Pine
+        guid: 0a1971ec012bf744b4c07c3a2458b8e7
+        id: 1944526579
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b0ad89df267e55419e762d1180da1b2f
+        - ElementName: Woodchopping
+          ObjectType: 11
+          guid: fbc11e322c78b549ba84f8512c61890d
+        - ElementName: Pine
+          ObjectType: 10
+          guid: 0a1971ec012bf744b4c07c3a2458b8e7
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
