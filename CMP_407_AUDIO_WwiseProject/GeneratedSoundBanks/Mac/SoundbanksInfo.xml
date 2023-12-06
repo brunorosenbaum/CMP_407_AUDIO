@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{C75D5A6F-5DBD-C1D7-E9DE-C3FCF89C4953}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{FDABCBAF-C418-6E75-5BE6-824BB8C9B155}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -37,7 +37,20 @@
 					<ShortName>tree1Chop.wav</ShortName>
 					<CachePath>SFX/tree1Chop_818F3B66.wem</CachePath>
 				</File>
+				<File Id="897192023" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>jump.wav</ShortName>
+					<CachePath>SFX/jump_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1042804794" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>landing.wav</ShortName>
+					<CachePath>SFX/landing_818F3B66.wem</CachePath>
+				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" LibName="Wwise Delay" LibId="6946819"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="1866025847" Name="Footstep" DurationType="OneShot" DurationMin="0.38994226" DurationMax="0.5210641">
 					<MediaRefs>
@@ -45,6 +58,26 @@
 						<MediaRef Id="417166193"/>
 						<MediaRef Id="592123486"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0.18680137" DurationMax="0.22214551">
+					<MediaRefs>
+						<MediaRef Id="897192023"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2180422931"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="674522502" Name="Land" DurationType="OneShot" DurationMin="0.2861875" DurationMax="0.2861875">
+					<MediaRefs>
+						<MediaRef Id="1042804794"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2180422931"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="1990903982" Name="Woodchopping" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5056667">
 					<SwitchContainers>
@@ -79,7 +112,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C49AFD47-0A3D-0B2A-8D5B-CC4133C9407D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -102,5 +135,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{64F5E2BA-3105-6F67-6DF3-A25AAF40311E}</FileHash>
+	<FileHash>{DAD360F5-7851-AF70-2E79-B9525BA2061C}</FileHash>
 </SoundBanksInfo>

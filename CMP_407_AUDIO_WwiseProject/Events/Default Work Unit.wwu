@@ -25,6 +25,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Jump" ID="{AB7E282F-692D-42FA-9AFF-02581C582541}">
+					<ChildrenList>
+						<Action Name="" ID="{51A2572A-9A94-4FCA-9559-9FE478E481ED}" ShortID="74018430">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jump" ID="{FD4E5F9E-65D1-477A-81D7-A4A20A83213F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Land" ID="{22C0D687-8217-4BDD-B9AD-78F21ACD9B87}">
+					<ChildrenList>
+						<Action Name="" ID="{28D908C0-731A-4926-AC75-D08FF110A3B4}" ShortID="14034551">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="landing" ID="{C1F3CC2F-FE59-497B-93C4-73C182D59C2A}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

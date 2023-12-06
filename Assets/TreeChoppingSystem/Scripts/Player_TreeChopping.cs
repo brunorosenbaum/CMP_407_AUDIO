@@ -32,8 +32,13 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     private bool isGrounded;
     public float jumpHeight = 3f;
 
-    //Sound footsteps
+    //Sounds
     public AK.Wwise.Event footstep = new AK.Wwise.Event();
+    public AK.Wwise.Event woodChopping;
+    public AK.Wwise.Event jump; 
+    public AK.Wwise.Event landing; 
+
+    //Walking bools
     private bool isWalking = false;
     private float walkCount = 0.0f;
     /// The speed at which footstep sounds are triggered.
@@ -43,12 +48,8 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     ///	Used to ensure we don't trigger a false Jump Land when the game starts.
     private int inAirCount = 16;
 
-    //Sound woodchopping 
-    //public AK.Wwise.Switch birchSwitch;
-    //public AK.Wwise.Switch elmSwitch;
-    //public AK.Wwise.Switch pineSwitch;
+    
 
-    [FormerlySerializedAs("woodChop")] public AK.Wwise.Event woodChopping; 
 
 
     private void AnimationEvent_OnHit() {
@@ -106,9 +107,9 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
         else 
         {
             if (isJumping && (inAirCount < 1)) //
-                //jumpLandSound.Post(gameObject);
+                landing.Post(gameObject);
 
-                isJumping = false;
+            isJumping = false;
         }
         if (inAirCount > 0)
             --inAirCount;
@@ -153,42 +154,13 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
         {
 
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-            //jumpSound.Post(gameObject);
+            jump.Post(gameObject);
 
         }
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime); 
 
-        //if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.W)) {
-        //    moveZ = +1f;
-        //}
-        //if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.S)) {
-        //    moveZ = -1f;
-        //}
-        //if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.A)) {
-        //    moveX = -1f;
-        //}
-        //if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.D)) {
-        //    moveX = +1f;
-        //}
-
-        //if (moveX != 0 || moveZ != 0) {
-        //    // Not idle
-        //    if (animator != null) animator.SetBool("IsWalking", true);
-        //} else {
-        //    if (animator != null) animator.SetBool("IsWalking", false);
-        //}
-
-        //Vector3 moveDir = (new Vector3(cameraTransform.forward.x, 0f, cameraTransform.forward.z) * moveZ) +
-        //    (new Vector3(cameraTransform.right.x, 0f, cameraTransform.right.z) * moveX);
-        //moveDir = moveDir.normalized;
-
-        //transform.forward = new Vector3(cameraTransform.forward.x, 0f, cameraTransform.forward.z);
-        //float moveSpeed = 3f;
-        //transform.position += moveDir * moveSpeed * Time.deltaTime;
-
-        //visualTransform.localPosition += -visualTransform.localPosition * Time.deltaTime * .5f;
     }
 
     public void Damage(int amount) {
