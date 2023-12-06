@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{FDABCBAF-C418-6E75-5BE6-824BB8C9B155}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{EF222AC8-EB28-85EB-E67D-E47906E3750B}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -37,6 +37,10 @@
 					<ShortName>tree1Chop.wav</ShortName>
 					<CachePath>SFX/tree1Chop_818F3B66.wem</CachePath>
 				</File>
+				<File Id="763772957" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>campfire.wav</ShortName>
+					<CachePath>SFX/campfire_806A9D1A.wem</CachePath>
+				</File>
 				<File Id="897192023" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>jump.wav</ShortName>
 					<CachePath>SFX/jump_818F3B66.wem</CachePath>
@@ -52,6 +56,11 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
+				<Event Id="1931646578" Name="Campfire" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="763772957"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1866025847" Name="Footstep" DurationType="OneShot" DurationMin="0.38994226" DurationMax="0.5210641">
 					<MediaRefs>
 						<MediaRef Id="134875293"/>
@@ -63,13 +72,8 @@
 					<MediaRefs>
 						<MediaRef Id="897192023"/>
 					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="2180422931"/>
-						</ShareSets>
-					</PluginRefs>
 				</Event>
-				<Event Id="674522502" Name="Land" DurationType="OneShot" DurationMin="0.2861875" DurationMax="0.2861875">
+				<Event Id="674522502" Name="Land" DurationType="OneShot" DurationMin="0.2624351" DurationMax="0.31208968">
 					<MediaRefs>
 						<MediaRef Id="1042804794"/>
 					</MediaRefs>
@@ -135,5 +139,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DAD360F5-7851-AF70-2E79-B9525BA2061C}</FileHash>
+	<FileHash>{46635654-8119-FC7A-B08A-A0DBFBC64BA9}</FileHash>
 </SoundBanksInfo>

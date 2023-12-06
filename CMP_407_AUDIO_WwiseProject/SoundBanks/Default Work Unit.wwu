@@ -6,15 +6,17 @@
 				<SoundBank Name="Soundbank407" ID="{3A2FFBE3-7A31-4B67-BD08-E44ED1B832BC}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Birch" ID="{D64D6349-8DDD-416B-9C24-27381242C963}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="campfire" ID="{F3C5BF02-7A7E-41E2-9983-D1285FB4059F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{AB7E282F-692D-42FA-9AFF-02581C582541}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Pine" ID="{149944F4-F245-4373-A9A5-D09ABB69DE73}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{7D0E2E83-8CFC-43CA-84B9-A267AB08714F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WoodChopping" ID="{16386F3D-EE6B-45F7-AE3C-2477574417BA}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Land" ID="{5AE83D05-1EC4-4811-A17B-5FAE89C410DD}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Elm" ID="{99C64894-0251-4A7B-A176-7AFBFC93FB2A}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="JumpLand" ID="{5240B325-4FB0-4AD2-ACA6-689124B33BAA}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Land" ID="{22C0D687-8217-4BDD-B9AD-78F21ACD9B87}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep" ID="{8AA9D53C-EDC7-4C7C-B975-E20E1E163892}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Woodchopping" ID="{57971F65-324D-4D91-B4A5-96D4B5CC98E5}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Campfire" ID="{950021E9-B5FE-4ED0-BF52-1081FD1154D0}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

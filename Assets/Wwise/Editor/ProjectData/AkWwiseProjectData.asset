@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7cee44ceb3472d4c882ea4fb97568433
     GuidInternal: 
-    m_lastTime: -8584997929663995640
+    m_lastTime: -8584997129409539571
     List:
     - name: Soundbank407
       guid: e3fb2f3a317a674bbd08e44ed1b832bc
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8826e1b14e13434da5cdf4e90db0ee93
     GuidInternal: 
-    m_lastTime: -8584997929663905668
+    m_lastTime: -8584997129409330001
     List:
+    - name: Campfire
+      guid: e9210095feb5d04ebf521081fd1154d0
+      id: 1931646578
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: Campfire
+        ObjectType: 3
+        guid: e9210095feb5d04ebf521081fd1154d0
+      Path: Events\Default Work Unit\Campfire
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: Footstep
       guid: 3cd5a98ac7ed7c4cb975e20e1e163892
       id: 1866025847
@@ -113,6 +130,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.5210641
       minDuration: 0.38994226
+    - name: Jump
+      guid: 2f287eab2d69fa429aff02581c582541
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: Jump
+        ObjectType: 3
+        guid: 2f287eab2d69fa429aff02581c582541
+      Path: Events\Default Work Unit\Jump
+      maxAttenuation: 0
+      maxDuration: 0.22214551
+      minDuration: 0.18680137
+    - name: Land
+      guid: 053de85ac41e1148a17b5fae89c410dd
+      id: 674522502
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: Land
+        ObjectType: 3
+        guid: 053de85ac41e1148a17b5fae89c410dd
+      Path: Events\Default Work Unit\Land
+      maxAttenuation: 0
+      maxDuration: 0.31208968
+      minDuration: 0.2624351
     - name: Woodchopping
       guid: 651f97574d32914db4a596d4b5cc98e5
       id: 1990903982
@@ -253,7 +304,7 @@ MonoBehaviour:
     m_lastTime: -8585003227769536901
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f00000010000000
+  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f000000100000003700000038000000490000004a00000054000000550000009700000098000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

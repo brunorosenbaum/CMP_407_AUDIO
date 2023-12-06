@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	674522502	Land			\Default Work Unit\Land	
 	1866025847	Footstep			\Default Work Unit\Footstep	
+	1931646578	Campfire			\Default Work Unit\Campfire	
 	1990903982	Woodchopping			\Default Work Unit\Woodchopping	
 	3833651337	Jump			\Default Work Unit\Jump	
 
@@ -22,6 +23,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	455690643	tree3Chop	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\tree3Chop_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\WoodChopping\Pine\tree3Chop		97184
 	592123486	footstep_2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\footstep_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\footstep_2		86600
 	597575265	tree1Chop	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\tree1Chop_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\WoodChopping\Birch\tree1Chop		96096
+	763772957	campfire	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\campfire_806A9D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\campfire		1868856
 	897192023	jump	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\jump_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\JumpLand\jump		39208
 	1042804794	landing	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\landing_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\JumpLand\landing		55044
 

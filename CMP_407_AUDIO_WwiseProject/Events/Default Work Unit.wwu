@@ -36,12 +36,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Land" ID="{22C0D687-8217-4BDD-B9AD-78F21ACD9B87}">
+				<Event Name="Land" ID="{5AE83D05-1EC4-4811-A17B-5FAE89C410DD}">
 					<ChildrenList>
-						<Action Name="" ID="{28D908C0-731A-4926-AC75-D08FF110A3B4}" ShortID="14034551">
+						<Action Name="" ID="{BAF5447F-CEA8-4974-A2F6-FBF8E5A8E610}" ShortID="182715128">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="landing" ID="{C1F3CC2F-FE59-497B-93C4-73C182D59C2A}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+									<ObjectRef Name="landing" ID="{273E3856-DA5F-4419-A988-37036C66AA8D}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Campfire" ID="{950021E9-B5FE-4ED0-BF52-1081FD1154D0}">
+					<ChildrenList>
+						<Action Name="" ID="{1AF3382A-0BE3-4021-9AF9-4E6E73D074E4}" ShortID="766820253">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="campfire" ID="{F3C5BF02-7A7E-41E2-9983-D1285FB4059F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
