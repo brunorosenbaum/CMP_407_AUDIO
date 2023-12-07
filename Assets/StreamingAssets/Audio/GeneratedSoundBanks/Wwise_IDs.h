@@ -22,6 +22,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace FOOTSTEPS
+        {
+            static const AkUniqueID GROUP = 2385628198U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID TWIGS = 250584673U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPS
+
         namespace WOODCHOPPING
         {
             static const AkUniqueID GROUP = 1990903982U;

@@ -10,6 +10,12 @@
 						<Switch Name="Pine" ID="{EC71190A-2B01-44F7-B4C0-7C3A2458B8E7}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Footsteps" ID="{0D3D3570-32D2-4DF9-9A51-25351D38E908}">
+					<ChildrenList>
+						<Switch Name="Grass" ID="{C8C24343-6D32-4095-A74B-24ECEF40906C}"/>
+						<Switch Name="Twigs" ID="{74DEFBE3-E46C-4C7C-8B58-B86C2A601937}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

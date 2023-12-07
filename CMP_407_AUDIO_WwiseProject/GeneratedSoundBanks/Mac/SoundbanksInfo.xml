@@ -9,10 +9,18 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{EF222AC8-EB28-85EB-E67D-E47906E3750B}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{3F960EAE-2B2B-9AF5-183B-015C1C7AC4F7}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
+				<File Id="31562484" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>twigs1.wav</ShortName>
+					<CachePath>SFX/twigs1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="121029296" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>twigs3.wav</ShortName>
+					<CachePath>SFX/twigs3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="134875293" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_1.wav</ShortName>
 					<CachePath>SFX/footstep_1_818F3B66.wem</CachePath>
@@ -45,6 +53,10 @@
 					<ShortName>jump.wav</ShortName>
 					<CachePath>SFX/jump_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1028259297" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>twigs2.wav</ShortName>
+					<CachePath>SFX/twigs2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1042804794" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>landing.wav</ShortName>
 					<CachePath>SFX/landing_818F3B66.wem</CachePath>
@@ -56,17 +68,30 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="1931646578" Name="Campfire" MaxAttenuation="100" DurationType="Infinite">
+				<Event Id="1931646578" Name="Campfire" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="763772957"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1866025847" Name="Footstep" DurationType="OneShot" DurationMin="0.38994226" DurationMax="0.5210641">
-					<MediaRefs>
-						<MediaRef Id="134875293"/>
-						<MediaRef Id="417166193"/>
-						<MediaRef Id="592123486"/>
-					</MediaRefs>
+				<Event Id="1866025847" Name="Footstep" DurationType="OneShot" DurationMin="0.31340146" DurationMax="0.5210641">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="4248645337" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="134875293"/>
+								<MediaRef Id="417166193"/>
+								<MediaRef Id="592123486"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="250584673"/>
+							<MediaRefs>
+								<MediaRef Id="31562484"/>
+								<MediaRef Id="121029296"/>
+								<MediaRef Id="1028259297"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0.18680137" DurationMax="0.22214551">
 					<MediaRefs>
@@ -114,6 +139,12 @@
 						<Switch Id="1944526579" Name="Pine"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2385628198" Name="Footsteps">
+					<Switches>
+						<Switch Id="250584673" Name="Twigs"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C49AFD47-0A3D-0B2A-8D5B-CC4133C9407D}">
@@ -136,8 +167,14 @@
 						<Switch Id="1944526579" Name="Pine"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2385628198" Name="Footsteps">
+					<Switches>
+						<Switch Id="250584673" Name="Twigs"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{46635654-8119-FC7A-B08A-A0DBFBC64BA9}</FileHash>
+	<FileHash>{ED1131B3-C5F7-078D-0674-73D0B487AC9F}</FileHash>
 </SoundBanksInfo>

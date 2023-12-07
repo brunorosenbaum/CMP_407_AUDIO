@@ -19,6 +19,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     [SerializeField] private GameObject hitArea;
     [SerializeField] private GameObject fxTreeHit;
     [SerializeField] private GameObject fxTreeHitBlocks;
+    private StumpSound stumpSound; 
 
 
     //Movement
@@ -37,7 +38,9 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     public AK.Wwise.Event footstep = new AK.Wwise.Event();
     public AK.Wwise.Event woodChopping;
     public AK.Wwise.Event jump; 
-    public AK.Wwise.Event landing; 
+    public AK.Wwise.Event landing;
+
+    public AK.Wwise.Switch footstepSwitch; 
 
     //Walking bools
     private bool isWalking = false;
@@ -54,7 +57,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     {
         HandleAttack();
         HandleMovement();
-        FootstepSound();
+        //SwitchFootsteps();
 
         if (((Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.0f) ||
              (Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.0f)))
@@ -86,7 +89,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
             if (walkCount > footstepRate)
             {
-                footstep.Post(gameObject);
+                footstep.Post(gameObject); 
 
                 walkCount = 0.0f;
             }
@@ -128,8 +131,6 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
         }
     }
 
-    
-
     private void HandleAttack() {
         if (Input.GetMouseButtonDown(0)) {
             if (animator != null) animator.SetTrigger("Attack");
@@ -168,25 +169,37 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Overlapping with stump sphere radius");
-
-    }
-
-    private void FootstepSound()
-    {
-        
-        Collider[] colliderArray = //Will return an array of colliders that the player's capsule collider overlaps with
-            Physics.OverlapSphere(transform.position, controller.radius);
-        foreach (Collider collider in colliderArray) //Loop through them
+        if (other.TryGetComponent<StumpSound>(out StumpSound stump)) //If the component is a stump
         {
-            if (collider.TryGetComponent<Tree>(out Tree tree) ) //If the component is a stump
-            {
-                OnTriggerEnter(collider);
-            }
+            //Debug.Log("Overlapping with stump sphere radius");
+            stump.soundMaterial.SetValue(gameObject);
+
         }
 
-
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        footstepSwitch.SetValue(gameObject);
+        
+    }
+    //private void SwitchFootsteps()
+    //{
+        
+
+    //    Collider[] colliderArray = //Will return an array of colliders that the player's capsule collider overlaps with
+    //        Physics.OverlapSphere(transform.position, controller.radius);
+    //    foreach (Collider collider in colliderArray) //Loop through them
+    //    {
+    //        if (collider.TryGetComponent<StumpSound>(out StumpSound stump)) 
+    //            stump.soundMaterial.SetValue(gameObject);
+    //        else
+    //            footstepSwitch.SetValue(gameObject);
+
+    //    }
+        
+
+    //}
     public void Damage(int amount) {
         // Damage!
     }

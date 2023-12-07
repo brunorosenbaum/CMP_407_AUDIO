@@ -16,10 +16,10 @@
 				</Event>
 				<Event Name="Footstep" ID="{8AA9D53C-EDC7-4C7C-B975-E20E1E163892}">
 					<ChildrenList>
-						<Action Name="" ID="{1C1A7885-E7C3-404A-9DBF-B7825EE8F900}" ShortID="430569081">
+						<Action Name="" ID="{3D479C9E-2D19-44C0-8217-6F45FC3C27B5}" ShortID="867545591">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{7D0E2E83-8CFC-43CA-84B9-A267AB08714F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+									<ObjectRef Name="Footsteps" ID="{90B137E1-1413-4392-B692-DBB4309F98CF}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
