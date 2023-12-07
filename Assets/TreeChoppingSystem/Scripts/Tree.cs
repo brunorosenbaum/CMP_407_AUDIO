@@ -13,7 +13,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
         Stump
     }
 
-    [SerializeField] private Type treeType;
+    [SerializeField] public Type treeType;
     [SerializeField] private Transform fxTreeDestroyed;
     [SerializeField] private Transform fxTreeLogDestroyed;
     [SerializeField] private Transform fxTreeLogHalfDestroyed;

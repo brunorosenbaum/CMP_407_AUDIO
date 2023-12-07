@@ -305,6 +305,7 @@ GameObject:
   - component: {fileID: 8372748528969190668}
   - component: {fileID: 6600043697370105191}
   - component: {fileID: 6609295399052718334}
+  - component: {fileID: 7686093891485940815}
   m_Layer: 0
   m_Name: Tree_Trunk_Elm
   m_TagString: Untagged
@@ -370,3 +371,16 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e5af0146eee264940a1fe229b6c54c15, type: 2}
+--- !u!135 &7686093891485940815
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9185701401552115638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}

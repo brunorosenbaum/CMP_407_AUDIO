@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 using Cinemachine;
 using CodeMonkey.Utils;
@@ -48,8 +49,49 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     ///	Used to ensure we don't trigger a false Jump Land when the game starts.
     private int inAirCount = 16;
 
-    
 
+    private void Update()
+    {
+        HandleAttack();
+        HandleMovement();
+        FootstepSound();
+
+        if (((Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.0f) ||
+             (Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.0f)))
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
+
+            walkCount = footstepRate;
+        }
+
+        if (!controller.isGrounded) //If controller isnt grounded its jumping
+            isJumping = true;
+        else
+        {
+            if (isJumping && (inAirCount < 1)) //
+                landing.Post(gameObject);
+
+            isJumping = false;
+        }
+        if (inAirCount > 0)
+            --inAirCount;
+
+        if (isWalking && !isJumping)
+        {
+            walkCount += Time.deltaTime * (speed / 10.0f);
+
+            if (walkCount > footstepRate)
+            {
+                footstep.Post(gameObject);
+
+                walkCount = 0.0f;
+            }
+        }
+    }
 
 
     private void AnimationEvent_OnHit() {
@@ -86,46 +128,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
         }
     }
 
-    private void Update() {
-        HandleAttack();
-        HandleMovement();
-
-        if (((Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.0f) ||
-             (Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.0f)))
-        {
-            isWalking = true;
-        }
-        else
-        {
-            isWalking = false;
-
-            walkCount = footstepRate;
-        }
-
-        if (!controller.isGrounded) //If controller isnt grounded its jumping
-            isJumping = true;
-        else 
-        {
-            if (isJumping && (inAirCount < 1)) //
-                landing.Post(gameObject);
-
-            isJumping = false;
-        }
-        if (inAirCount > 0)
-            --inAirCount;
-
-        if (isWalking && !isJumping)
-        {
-            walkCount += Time.deltaTime * (speed / 10.0f);
-
-            if (walkCount > footstepRate)
-            {
-                footstep.Post(gameObject);
-
-                walkCount = 0.0f;
-            }
-        }
-    }
+    
 
     private void HandleAttack() {
         if (Input.GetMouseButtonDown(0)) {
@@ -163,6 +166,27 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Overlapping with stump sphere radius");
+
+    }
+
+    private void FootstepSound()
+    {
+        
+        Collider[] colliderArray = //Will return an array of colliders that the player's capsule collider overlaps with
+            Physics.OverlapSphere(transform.position, controller.radius);
+        foreach (Collider collider in colliderArray) //Loop through them
+        {
+            if (collider.TryGetComponent<Tree>(out Tree tree) ) //If the component is a stump
+            {
+                OnTriggerEnter(collider);
+            }
+        }
+
+
+    }
     public void Damage(int amount) {
         // Damage!
     }
