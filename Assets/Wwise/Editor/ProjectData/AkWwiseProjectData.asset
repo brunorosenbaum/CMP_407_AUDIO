@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7cee44ceb3472d4c882ea4fb97568433
     GuidInternal: 
-    m_lastTime: -8584996319378993939
+    m_lastTime: -8584996061586762084
     List:
     - name: Soundbank407
       guid: e3fb2f3a317a674bbd08e44ed1b832bc
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8826e1b14e13434da5cdf4e90db0ee93
     GuidInternal: 
-    m_lastTime: -8584996319378773926
+    m_lastTime: -8584996071216767353
     List:
     - name: Campfire
       guid: e9210095feb5d04ebf521081fd1154d0
@@ -164,6 +164,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.31208968
       minDuration: 0.2624351
+    - name: Leaves
+      guid: 94b264abc0fe8a42977e690955265511
+      id: 582824249
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: Leaves
+        ObjectType: 3
+        guid: 94b264abc0fe8a42977e690955265511
+      Path: Events\Default Work Unit\Leaves
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
+    - name: Rock
+      guid: 9dd32de6a88ed846ad1d6e43d061d0b8
+      id: 2144363834
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: Rock
+        ObjectType: 3
+        guid: 9dd32de6a88ed846ad1d6e43d061d0b8
+      Path: Events\Default Work Unit\Rock
+      maxAttenuation: 0
+      maxDuration: 0.25580359
+      minDuration: 0.18350588
     - name: Woodchopping
       guid: 651f97574d32914db4a596d4b5cc98e5
       id: 1990903982
@@ -221,7 +255,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: b0ad89df267e55419e762d1180da1b2f
     GuidInternal: 
-    m_lastTime: -8584996319378683913
+    m_lastTime: -8584996071216667346
     List:
     - name: Footsteps
       guid: 70353d0dd232f94d9a5125351d38e908
@@ -270,6 +304,72 @@ MonoBehaviour:
         - ElementName: Twigs
           ObjectType: 10
           guid: e3fbde746ce47c4c8b58b86c2a601937
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Leaves
+      guid: 613f29bc541fab4fbf1ee112bc40e3cd
+      id: 582824249
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b0ad89df267e55419e762d1180da1b2f
+      - ElementName: Leaves
+        ObjectType: 11
+        guid: 613f29bc541fab4fbf1ee112bc40e3cd
+      Path: Switches\Default Work Unit\Leaves
+      values:
+      - name: BirchLeaves
+        guid: 2c9d68e55a3e2c41abcab080d17e7a93
+        id: 3854930733
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b0ad89df267e55419e762d1180da1b2f
+        - ElementName: Leaves
+          ObjectType: 11
+          guid: 613f29bc541fab4fbf1ee112bc40e3cd
+        - ElementName: BirchLeaves
+          ObjectType: 10
+          guid: 2c9d68e55a3e2c41abcab080d17e7a93
+      - name: ElmLeaves
+        guid: 11829e16c6c73b43a79d59d09378fd8e
+        id: 1599042871
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b0ad89df267e55419e762d1180da1b2f
+        - ElementName: Leaves
+          ObjectType: 11
+          guid: 613f29bc541fab4fbf1ee112bc40e3cd
+        - ElementName: ElmLeaves
+          ObjectType: 10
+          guid: 11829e16c6c73b43a79d59d09378fd8e
+      - name: PineLeaves
+        guid: 0a1d18a195d25d46a593db3e41734859
+        id: 3626346511
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b0ad89df267e55419e762d1180da1b2f
+        - ElementName: Leaves
+          ObjectType: 11
+          guid: 613f29bc541fab4fbf1ee112bc40e3cd
+        - ElementName: PineLeaves
+          ObjectType: 10
+          guid: 0a1d18a195d25d46a593db3e41734859
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -354,7 +454,7 @@ MonoBehaviour:
     m_lastTime: -8585003227769536901
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000001000000037000000380000004900000054000000550000005d0000005e0000009700000098000000ce000000cf000000d0000000
+  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000150000001700000037000000380000004900000054000000550000005d0000005e0000009700000098000000ce000000cf000000d0000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

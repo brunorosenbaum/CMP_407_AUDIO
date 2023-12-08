@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3296910486322179457}
   - component: {fileID: 4546896391867831492}
   - component: {fileID: -6269332498581723747}
-  - component: {fileID: 6244730846629131787}
   - component: {fileID: 3630756933838237673}
+  - component: {fileID: -8858843188837352217}
   m_Layer: 0
   m_Name: Tree_Trunk_Birch
   m_TagString: Untagged
@@ -77,19 +77,12 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: fdee1174ba197824e94b67185e7a9876, type: 2}
---- !u!135 &6244730846629131787
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2777359989504620347}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 5
-  m_Center: {x: 0, y: 0, z: 0}
+  leavesRustling:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &3630756933838237673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +101,19 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0ee94f3ec42e25b41bb70dc7c1ea30fa, type: 2}
+--- !u!135 &-8858843188837352217
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2777359989504620347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3745808402404806254
 GameObject:
   m_ObjectHideFlags: 0

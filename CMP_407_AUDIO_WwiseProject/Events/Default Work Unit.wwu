@@ -80,6 +80,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="TreeFelling" ID="{F850817B-683E-479C-9043-BDC9B8E1BDFA}">
+					<ChildrenList>
+						<Action Name="" ID="{C57D4DE6-5DD5-457E-89C4-3B0F3D4B9B64}" ShortID="125229692">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Felling" ID="{607BDBAA-3431-4847-8F95-2D0B87F24197}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopLeaves" ID="{A46F4498-BD55-4ECF-8282-00169FD9F58A}">
+					<ChildrenList>
+						<Action Name="" ID="{07768768-94FD-47AF-A107-2927E4385AEA}" ShortID="505622844">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Leaves" ID="{D18AEBE7-B695-4512-9506-8AFA827A74EF}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: BirchLeaves
   id: 3854930733
   guid: E5689D2C-3E5A-412C-ABCA-B080D17E7A93
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 904bcf55cc7f3ba4990165e994330291, type: 2}

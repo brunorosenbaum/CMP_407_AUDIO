@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{3AEEAF91-7072-AE5B-9278-D0E941097242}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{866E1427-FC70-DB17-04CA-F7A449668B5A}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -53,6 +53,10 @@
 					<ShortName>tree1Chop.wav</ShortName>
 					<CachePath>SFX/tree1Chop_818F3B66.wem</CachePath>
 				</File>
+				<File Id="628621901" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>felling.wav</ShortName>
+					<CachePath>SFX/felling_818F3B66.wem</CachePath>
+				</File>
 				<File Id="704944141" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>elmLeaves.wav</ShortName>
 					<CachePath>SFX/elmLeaves_806A9D1A.wem</CachePath>
@@ -87,6 +91,9 @@
 				</File>
 			</Media>
 			<Plugins>
+				<Custom>
+					<Plugin Id="688170875" Name="Expander (Custom)" LibName="Wwise Expander" LibId="7143427"/>
+				</Custom>
 				<ShareSets>
 					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" LibName="Wwise Delay" LibId="6946819"/>
 				</ShareSets>
@@ -139,36 +146,66 @@
 							<MediaRefs>
 								<MediaRef Id="849490016"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="688170875"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="582824249" Id="1599042871"/>
 							<MediaRefs>
 								<MediaRef Id="704944141"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="688170875"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="582824249" Id="3854930733" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="1028684433"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="688170875"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="582824249" Id="3626346511"/>
 							<MediaRefs>
 								<MediaRef Id="849490016"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="688170875"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="582824249" Id="1599042871"/>
 							<MediaRefs>
 								<MediaRef Id="704944141"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="688170875"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="582824249" Id="3854930733" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="1028684433"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="688170875"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -177,6 +214,48 @@
 						<MediaRef Id="35374810"/>
 						<MediaRef Id="92980129"/>
 						<MediaRef Id="951310688"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3349846273" Name="StopLeaves" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="582824249" Id="3626346511"/>
+							<MediaRefs>
+								<MediaRef Id="849490016"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="688170875"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="582824249" Id="1599042871"/>
+							<MediaRefs>
+								<MediaRef Id="704944141"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="688170875"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="582824249" Id="3854930733" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="1028684433"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="688170875"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1724430086" Name="TreeFelling" MaxAttenuation="100" DurationType="OneShot" DurationMin="4.109592" DurationMax="4.887156">
+					<MediaRefs>
+						<MediaRef Id="628621901"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1990903982" Name="Woodchopping" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5056667">
@@ -225,7 +304,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3ED62E55-529D-B8A8-0529-E3B28EB77B23}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D8A79A87-C855-DDF6-FDD5-41B445B46062}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -261,5 +340,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4CFA24ED-E11F-FA35-290D-568DE7266FBB}</FileHash>
+	<FileHash>{84192711-6065-3FE2-E078-1EEAEA0E655B}</FileHash>
 </SoundBanksInfo>

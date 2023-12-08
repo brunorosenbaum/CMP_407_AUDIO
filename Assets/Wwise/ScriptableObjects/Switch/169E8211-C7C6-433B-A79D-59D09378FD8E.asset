@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: ElmLeaves
   id: 1599042871
   guid: 169E8211-C7C6-433B-A79D-59D09378FD8E
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 904bcf55cc7f3ba4990165e994330291, type: 2}

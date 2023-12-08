@@ -19,6 +19,8 @@ namespace AK
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID LEAVES = 582824249U;
         static const AkUniqueID ROCK = 2144363834U;
+        static const AkUniqueID STOPLEAVES = 3349846273U;
+        static const AkUniqueID TREEFELLING = 1724430086U;
         static const AkUniqueID WOODCHOPPING = 1990903982U;
     } // namespace EVENTS
 

@@ -23,8 +23,14 @@ public class Tree : MonoBehaviour, ITreeDamageable {
     [SerializeField] private Transform treeStump;
 
     private HealthSystem healthSystem;
+
+    //Sounds
+    public AK.Wwise.Event felling; 
+    public AK.Wwise.Event stopLeaves; 
+
     public AK.Wwise.Switch speciesSwitch;
     public AK.Wwise.Switch leavesRustling;
+
 
     private void Awake() {
         int healthAmount;
@@ -55,6 +61,10 @@ public class Tree : MonoBehaviour, ITreeDamageable {
 
                 // Spawn Stump
                 Instantiate(treeStump, transform.position, transform.rotation);
+                
+                //Play tree felling sound
+                stopLeaves.Post(gameObject); 
+                felling.Post(gameObject); 
                 break;
             case Type.Log:
                 // Spawn FX

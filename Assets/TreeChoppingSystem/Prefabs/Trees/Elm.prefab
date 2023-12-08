@@ -453,6 +453,14 @@ MonoBehaviour:
   treeLog: {fileID: 6544008936531603717, guid: 6b08130cd86fe6a47be82062b22f7259, type: 3}
   treeLogHalf: {fileID: 2809928136178568926, guid: 4a0c012d5f99ab4408b158ad9900f7f8, type: 3}
   treeStump: {fileID: 8372748528969190668, guid: b83d717870547cc4282774f0bb349a9c, type: 3}
+  felling:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b9451535433fc7649872fce4b3a86123, type: 2}
+  stopLeaves:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a2f5a7bd2293a0847bbc9cfde8708c04, type: 2}
   speciesSwitch:
     idInternal: 0
     valueGuidInternal: 
@@ -472,7 +480,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6367135353974974757}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 6af1e8f0dbbad764a8ed1a9af89fa250, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.25
@@ -504,7 +512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3535d6217c7090b4db4699d8ab78e3a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: d1bbb3b5
+  triggerList: d1bbb3b5cd2be4c0
   useOtherObject: 0
   data:
     idInternal: 0

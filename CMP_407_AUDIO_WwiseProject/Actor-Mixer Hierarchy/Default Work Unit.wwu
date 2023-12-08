@@ -792,6 +792,11 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="OutputBusVolume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -1025,6 +1030,23 @@
 							</PropertyList>
 						</Position>
 					</PositioningInfo>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{FD24622F-C8AA-4343-9441-50AC3249A7F1}" ShortID="998934474">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Expander (Custom)" ID="{E829C331-13DE-44C3-B289-3ABBF1E271DF}" ShortID="688170875" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3"/>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
@@ -1059,6 +1081,69 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<Sound Name="Felling" ID="{607BDBAA-3431-4847-8F95-2D0B87F24197}" ShortID="475310851">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{25F504AD-88F7-4821-9CCE-8E63C88A0A2F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="FellingAttenuation" ID="{52DCBF99-8AD3-404D-821F-1AC54FBA8BB9}" WorkUnitID="{D6AA5150-DDE6-44CA-B334-92A488F4A663}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="felling" ID="{1E208D70-B57C-4BC1-860B-2F244988A70D}">
+							<Language>SFX</Language>
+							<AudioFile>felling.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="628621901"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="felling" ID="{1E208D70-B57C-4BC1-860B-2F244988A70D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="FallDown" ID="{97D40D56-BB2B-4273-9FD5-F6D230033848}" ShortID="556462098">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="fallDown" ID="{44988460-3F47-4054-A1AE-CDE6A3BE3485}">
+							<Language>SFX</Language>
+							<AudioFile>fallDown.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1006074681"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="fallDown" ID="{44988460-3F47-4054-A1AE-CDE6A3BE3485}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
