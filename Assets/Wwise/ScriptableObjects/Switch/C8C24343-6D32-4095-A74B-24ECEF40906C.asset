@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Grass
   id: 4248645337
   guid: C8C24343-6D32-4095-A74B-24ECEF40906C
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: a6ffd9b1ecd9d1b47894af5de17d4918, type: 2}

@@ -4,9 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - BirchTree
-  - ElmTree
-  - PineTree
+  - Rock
   layers:
   - Default
   - TransparentFX

@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
+	529395989	Rockhit			\Default Work Unit\Rockhit	
 	674522502	Land			\Default Work Unit\Land	
 	1866025847	Footstep			\Default Work Unit\Footstep	
 	1931646578	Campfire			\Default Work Unit\Campfire	
 	1990903982	Woodchopping			\Default Work Unit\Woodchopping	
+	2144363834	Rock			\Default Work Unit\Rock	
 	3833651337	Jump			\Default Work Unit\Jump	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -21,6 +23,8 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	31562484	twigs1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\twigs1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Twigs\twigs1		77864
+	35374810	rock3	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\rock3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\RockHit\rock3		45132
+	92980129	rock2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\rock2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\RockHit\rock2		38516
 	121029296	twigs3	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\twigs3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Twigs\twigs3		76736
 	134875293	footstep_1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\footstep_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\footstep_1		86596
 	254406503	tree2Chop	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\tree2Chop_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\WoodChopping\Elm\tree2Chop		96096
@@ -30,6 +34,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	597575265	tree1Chop	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\tree1Chop_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\WoodChopping\Birch\tree1Chop		96096
 	763772957	campfire	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\campfire_806A9D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\campfire		1868856
 	897192023	jump	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\jump_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\JumpLand\jump		39208
+	951310688	rock1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\rock1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\RockHit\rock1		38604
 	1028259297	twigs2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\twigs2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Twigs\twigs2		67636
 	1042804794	landing	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\landing_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\JumpLand\landing		55044
 

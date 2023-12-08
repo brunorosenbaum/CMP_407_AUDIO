@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7cee44ceb3472d4c882ea4fb97568433
     GuidInternal: 
-    m_lastTime: -8584997129409539571
+    m_lastTime: -8584996319378993939
     List:
     - name: Soundbank407
       guid: e3fb2f3a317a674bbd08e44ed1b832bc
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8826e1b14e13434da5cdf4e90db0ee93
     GuidInternal: 
-    m_lastTime: -8584997129409330001
+    m_lastTime: -8584996319378773926
     List:
     - name: Campfire
       guid: e9210095feb5d04ebf521081fd1154d0
@@ -110,7 +110,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: e9210095feb5d04ebf521081fd1154d0
       Path: Events\Default Work Unit\Campfire
-      maxAttenuation: 100
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: Footstep
@@ -129,7 +129,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Footstep
       maxAttenuation: 0
       maxDuration: 0.5210641
-      minDuration: 0.38994226
+      minDuration: 0.31340146
     - name: Jump
       guid: 2f287eab2d69fa429aff02581c582541
       id: 3833651337
@@ -221,8 +221,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: b0ad89df267e55419e762d1180da1b2f
     GuidInternal: 
-    m_lastTime: -8584997933500229172
+    m_lastTime: -8584996319378683913
     List:
+    - name: Footsteps
+      guid: 70353d0dd232f94d9a5125351d38e908
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b0ad89df267e55419e762d1180da1b2f
+      - ElementName: Footsteps
+        ObjectType: 11
+        guid: 70353d0dd232f94d9a5125351d38e908
+      Path: Switches\Default Work Unit\Footsteps
+      values:
+      - name: Grass
+        guid: 4343c2c8326d9540a74b24ecef40906c
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b0ad89df267e55419e762d1180da1b2f
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: 70353d0dd232f94d9a5125351d38e908
+        - ElementName: Grass
+          ObjectType: 10
+          guid: 4343c2c8326d9540a74b24ecef40906c
+      - name: Twigs
+        guid: e3fbde746ce47c4c8b58b86c2a601937
+        id: 250584673
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b0ad89df267e55419e762d1180da1b2f
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: 70353d0dd232f94d9a5125351d38e908
+        - ElementName: Twigs
+          ObjectType: 10
+          guid: e3fbde746ce47c4c8b58b86c2a601937
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Woodchopping
       guid: fbc11e322c78b549ba84f8512c61890d
       id: 1990903982
@@ -304,7 +354,7 @@ MonoBehaviour:
     m_lastTime: -8585003227769536901
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f000000100000003700000038000000490000004a00000054000000550000009700000098000000
+  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000001000000037000000380000004900000054000000550000005d0000005e0000009700000098000000ce000000cf000000d0000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

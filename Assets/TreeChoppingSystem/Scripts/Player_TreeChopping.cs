@@ -19,7 +19,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     [SerializeField] private GameObject hitArea;
     [SerializeField] private GameObject fxTreeHit;
     [SerializeField] private GameObject fxTreeHitBlocks;
-    private StumpSound stumpSound; 
+  
 
 
     //Movement
@@ -39,6 +39,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     public AK.Wwise.Event woodChopping;
     public AK.Wwise.Event jump; 
     public AK.Wwise.Event landing;
+    public AK.Wwise.Event rockHit; 
 
     public AK.Wwise.Switch footstepSwitch; 
 
@@ -111,8 +112,6 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
                     woodChopping.Post(gameObject);
                 }
 
-
-
                 // Damage Popup
                 int damageAmount = UnityEngine.Random.Range(10, 30);
                 DamagePopup.Create(hitArea.transform.position, damageAmount, damageAmount > 14);
@@ -124,10 +123,18 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
                 // Shake Camera
                 treeShake.GenerateImpulse();
 
-                // Spawn FX
-                Instantiate(fxTreeHit, hitArea.transform.position, Quaternion.identity);
-                Instantiate(fxTreeHitBlocks, hitArea.transform.position, Quaternion.identity);
+               
             }
+
+            if (collider.CompareTag("Rock"))
+            {
+                Debug.Log("Hit a rock");
+                rockHit.Post(gameObject);
+
+            } 
+            // Spawn FX
+            Instantiate(fxTreeHit, hitArea.transform.position, Quaternion.identity);
+            Instantiate(fxTreeHitBlocks, hitArea.transform.position, Quaternion.identity);
         }
     }
 

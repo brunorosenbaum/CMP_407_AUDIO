@@ -9,13 +9,21 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{3F960EAE-2B2B-9AF5-183B-015C1C7AC4F7}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{ED10628F-9F96-75B6-24F0-2A91416AD122}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
 				<File Id="31562484" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>twigs1.wav</ShortName>
 					<CachePath>SFX/twigs1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="35374810" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rock3.wav</ShortName>
+					<CachePath>SFX/rock3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="92980129" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rock2.wav</ShortName>
+					<CachePath>SFX/rock2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="121029296" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>twigs3.wav</ShortName>
@@ -52,6 +60,10 @@
 				<File Id="897192023" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>jump.wav</ShortName>
 					<CachePath>SFX/jump_818F3B66.wem</CachePath>
+				</File>
+				<File Id="951310688" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rock1.wav</ShortName>
+					<CachePath>SFX/rock1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1028259297" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>twigs2.wav</ShortName>
@@ -107,6 +119,20 @@
 							<PluginRef Id="2180422931"/>
 						</ShareSets>
 					</PluginRefs>
+				</Event>
+				<Event Id="2144363834" Name="Rock" DurationType="OneShot" DurationMin="0.18350588" DurationMax="0.25580359">
+					<MediaRefs>
+						<MediaRef Id="35374810"/>
+						<MediaRef Id="92980129"/>
+						<MediaRef Id="951310688"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="529395989" Name="Rockhit" DurationType="OneShot" DurationMin="0.18350588" DurationMax="0.25580359">
+					<MediaRefs>
+						<MediaRef Id="35374810"/>
+						<MediaRef Id="92980129"/>
+						<MediaRef Id="951310688"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="1990903982" Name="Woodchopping" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5056667">
 					<SwitchContainers>
@@ -176,5 +202,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{10C585E0-5898-70F1-A7B4-A389317DFA34}</FileHash>
+	<FileHash>{A987B2A0-2CEE-E981-34E6-3F2DF565EB8E}</FileHash>
 </SoundBanksInfo>
