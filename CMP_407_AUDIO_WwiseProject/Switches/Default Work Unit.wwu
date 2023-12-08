@@ -16,6 +16,13 @@
 						<Switch Name="Twigs" ID="{74DEFBE3-E46C-4C7C-8B58-B86C2A601937}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Leaves" ID="{BC293F61-1F54-4FAB-BF1E-E112BC40E3CD}">
+					<ChildrenList>
+						<Switch Name="BirchLeaves" ID="{E5689D2C-3E5A-412C-ABCA-B080D17E7A93}"/>
+						<Switch Name="ElmLeaves" ID="{169E8211-C7C6-433B-A79D-59D09378FD8E}"/>
+						<Switch Name="PineLeaves" ID="{A1181D0A-D295-465D-A593-DB3E41734859}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{ED10628F-9F96-75B6-24F0-2A91416AD122}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{3AEEAF91-7072-AE5B-9278-D0E941097242}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -53,9 +53,17 @@
 					<ShortName>tree1Chop.wav</ShortName>
 					<CachePath>SFX/tree1Chop_818F3B66.wem</CachePath>
 				</File>
+				<File Id="704944141" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>elmLeaves.wav</ShortName>
+					<CachePath>SFX/elmLeaves_806A9D1A.wem</CachePath>
+				</File>
 				<File Id="763772957" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>campfire.wav</ShortName>
 					<CachePath>SFX/campfire_806A9D1A.wem</CachePath>
+				</File>
+				<File Id="849490016" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>pineLeaves.wav</ShortName>
+					<CachePath>SFX/pineLeaves_806A9D1A.wem</CachePath>
 				</File>
 				<File Id="897192023" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>jump.wav</ShortName>
@@ -68,6 +76,10 @@
 				<File Id="1028259297" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>twigs2.wav</ShortName>
 					<CachePath>SFX/twigs2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1028684433" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>birchLeaves.wav</ShortName>
+					<CachePath>SFX/birchLeaves_806A9D1A.wem</CachePath>
 				</File>
 				<File Id="1042804794" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>landing.wav</ShortName>
@@ -120,14 +132,47 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="2144363834" Name="Rock" DurationType="OneShot" DurationMin="0.18350588" DurationMax="0.25580359">
-					<MediaRefs>
-						<MediaRef Id="35374810"/>
-						<MediaRef Id="92980129"/>
-						<MediaRef Id="951310688"/>
-					</MediaRefs>
+				<Event Id="582824249" Name="Leaves" MaxAttenuation="100" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="582824249" Id="3626346511"/>
+							<MediaRefs>
+								<MediaRef Id="849490016"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="582824249" Id="1599042871"/>
+							<MediaRefs>
+								<MediaRef Id="704944141"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="582824249" Id="3854930733" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="1028684433"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="582824249" Id="3626346511"/>
+							<MediaRefs>
+								<MediaRef Id="849490016"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="582824249" Id="1599042871"/>
+							<MediaRefs>
+								<MediaRef Id="704944141"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="582824249" Id="3854930733" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="1028684433"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
-				<Event Id="529395989" Name="Rockhit" DurationType="OneShot" DurationMin="0.18350588" DurationMax="0.25580359">
+				<Event Id="2144363834" Name="Rock" DurationType="OneShot" DurationMin="0.18350588" DurationMax="0.25580359">
 					<MediaRefs>
 						<MediaRef Id="35374810"/>
 						<MediaRef Id="92980129"/>
@@ -158,6 +203,13 @@
 				</Event>
 			</Events>
 			<SwitchGroups>
+				<SwitchGroup Id="582824249" Name="Leaves">
+					<Switches>
+						<Switch Id="1599042871" Name="ElmLeaves"/>
+						<Switch Id="3626346511" Name="PineLeaves"/>
+						<Switch Id="3854930733" Name="BirchLeaves"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="1990903982" Name="Woodchopping">
 					<Switches>
 						<Switch Id="335352537" Name="Birch"/>
@@ -186,6 +238,13 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<SwitchGroups>
+				<SwitchGroup Id="582824249" Name="Leaves">
+					<Switches>
+						<Switch Id="1599042871" Name="ElmLeaves"/>
+						<Switch Id="3626346511" Name="PineLeaves"/>
+						<Switch Id="3854930733" Name="BirchLeaves"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="1990903982" Name="Woodchopping">
 					<Switches>
 						<Switch Id="335352537" Name="Birch"/>
@@ -202,5 +261,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A987B2A0-2CEE-E981-34E6-3F2DF565EB8E}</FileHash>
+	<FileHash>{4CFA24ED-E11F-FA35-290D-568DE7266FBB}</FileHash>
 </SoundBanksInfo>

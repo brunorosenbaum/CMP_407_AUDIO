@@ -24,6 +24,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
 
     private HealthSystem healthSystem;
     public AK.Wwise.Switch speciesSwitch;
+    public AK.Wwise.Switch leavesRustling;
 
     private void Awake() {
         int healthAmount;

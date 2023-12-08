@@ -1957,6 +1957,7 @@
 								</Effect>
 								<Effect Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
+										<Property Name="DelayTime" Type="Real32" Value="71"/>
 										<Property Name="DryLevel" Type="Real32" Value="0"/>
 										<Property Name="Pitch" Type="Real32" Value="-1200"/>
 									</PropertyList>

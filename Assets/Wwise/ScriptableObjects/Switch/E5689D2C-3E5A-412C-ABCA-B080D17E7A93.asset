@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82e79d22861a1f942a5f3c34080e1b83, type: 3}
+  m_Name: E5689D2C-3E5A-412C-ABCA-B080D17E7A93
+  m_EditorClassIdentifier: 
+  objectName: BirchLeaves
+  id: 3854930733
+  guid: E5689D2C-3E5A-412C-ABCA-B080D17E7A93
+  WwiseSwitchGroupReference: {fileID: 0}

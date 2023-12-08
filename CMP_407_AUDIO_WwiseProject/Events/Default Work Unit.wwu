@@ -58,9 +58,9 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Rockhit" ID="{06E62B7C-FBB4-463B-B57D-709B53526D70}">
+				<Event Name="Rock" ID="{E62DD39D-8EA8-46D8-AD1D-6E43D061D0B8}">
 					<ChildrenList>
-						<Action Name="" ID="{98C9C254-7B0C-44FB-A6AA-5666E543712C}" ShortID="450877299">
+						<Action Name="" ID="{9B8965C3-4EE4-4A25-BD23-007676C1ECD2}" ShortID="989634929">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="RockHit" ID="{6D21A7C9-12FE-419A-B2C2-98035F418334}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
@@ -69,12 +69,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Rock" ID="{E62DD39D-8EA8-46D8-AD1D-6E43D061D0B8}">
+				<Event Name="Leaves" ID="{AB64B294-FEC0-428A-977E-690955265511}">
 					<ChildrenList>
-						<Action Name="" ID="{9B8965C3-4EE4-4A25-BD23-007676C1ECD2}" ShortID="989634929">
+						<Action Name="" ID="{11870441-4925-4E7A-A4EF-2E433C07B733}" ShortID="480505463">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="RockHit" ID="{6D21A7C9-12FE-419A-B2C2-98035F418334}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+									<ObjectRef Name="Leaves" ID="{D18AEBE7-B695-4512-9506-8AFA827A74EF}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

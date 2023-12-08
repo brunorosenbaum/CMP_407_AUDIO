@@ -765,6 +765,300 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<SwitchContainer Name="Leaves" ID="{D18AEBE7-B695-4512-9506-8AFA827A74EF}" ShortID="44335440">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Highpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{C681EF53-57FF-4093-A399-D14289CE71ED}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="10"/>
+											<Property Name="Min" Type="Real64" Value="-10"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{231352E7-5277-4C2A-966E-DD579C94A624}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="10"/>
+											<Property Name="Min" Type="Real64" Value="-10"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{CC7B7FCC-98C5-40A9-8593-99C031235EB7}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{6FA2443D-F175-4F75-8F8F-6599AD6B1F1B}" ShortID="1036022338">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{0562714F-9E08-47A0-A583-6E31362CE2FF}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log3</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="ADPCM As Input" ID="{844B7EC4-A8FF-43AD-821E-25B9459D4413}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="BirchLeaves" ID="{E5689D2C-3E5A-412C-ABCA-B080D17E7A93}" WorkUnitID="{DF89ADB0-7E26-4155-9E76-2D1180DA1B2F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Leaves" ID="{BC293F61-1F54-4FAB-BF1E-E112BC40E3CD}" WorkUnitID="{DF89ADB0-7E26-4155-9E76-2D1180DA1B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="birchLeaves" ID="{1E02EFB9-C134-4AFE-AE0E-2A1EB5E9E26C}" ShortID="1039693340">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{233DCFFE-9731-48A0-B570-89DEC5CA015F}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4C1A468A-519B-4AD9-B35D-C6B51DB8E75B}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="ADPCM As Input" ID="{844B7EC4-A8FF-43AD-821E-25B9459D4413}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="birchLeaves" ID="{C7249183-FBF9-40E1-BBD5-05C46FB97130}">
+									<Language>SFX</Language>
+									<AudioFile>birchLeaves.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1028684433"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="birchLeaves" ID="{C7249183-FBF9-40E1-BBD5-05C46FB97130}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="elmLeaves" ID="{A5EF6951-5CF6-41F8-B863-F0C39E8D8C0F}" ShortID="1066107240">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="elmLeaves" ID="{26270913-A14E-4691-BDA0-9F01BD1063D2}">
+									<Language>SFX</Language>
+									<AudioFile>elmLeaves.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="704944141"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="elmLeaves" ID="{26270913-A14E-4691-BDA0-9F01BD1063D2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="pineLeaves" ID="{528FD5FA-89EF-4929-AAD0-49A3A0740DA9}" ShortID="360227243">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2E87F240-12FD-42DC-AFF9-E1127CD35783}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pineLeaves" ID="{B57D46B4-D127-4B98-BB15-97528857D00D}">
+									<Language>SFX</Language>
+									<AudioFile>pineLeaves.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="849490016"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pineLeaves" ID="{B57D46B4-D127-4B98-BB15-97528857D00D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{D7B94F15-5123-45DF-89E1-6972FBDFBBF6}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="-5.55111512312578E-17"/>
+							</PropertyList>
+						</Panner>
+						<Position Name="" ID="{F2269FF0-3431-4BBD-8A42-3926893985BD}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+							</PropertyList>
+						</Position>
+					</PositioningInfo>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="elmLeaves" ID="{A5EF6951-5CF6-41F8-B863-F0C39E8D8C0F}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="birchLeaves" ID="{1E02EFB9-C134-4AFE-AE0E-2A1EB5E9E26C}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="pineLeaves" ID="{528FD5FA-89EF-4929-AAD0-49A3A0740DA9}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="PineLeaves" ID="{A1181D0A-D295-465D-A593-DB3E41734859}"/>
+								<ItemList>
+									<ItemRef Name="pineLeaves" ID="{528FD5FA-89EF-4929-AAD0-49A3A0740DA9}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="ElmLeaves" ID="{169E8211-C7C6-433B-A79D-59D09378FD8E}"/>
+								<ItemList>
+									<ItemRef Name="elmLeaves" ID="{A5EF6951-5CF6-41F8-B863-F0C39E8D8C0F}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="BirchLeaves" ID="{E5689D2C-3E5A-412C-ABCA-B080D17E7A93}"/>
+								<ItemList>
+									<ItemRef Name="birchLeaves" ID="{1E02EFB9-C134-4AFE-AE0E-2A1EB5E9E26C}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
