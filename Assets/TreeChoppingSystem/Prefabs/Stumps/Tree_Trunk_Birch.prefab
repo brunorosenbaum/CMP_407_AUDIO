@@ -71,6 +71,18 @@ MonoBehaviour:
   treeLog: {fileID: 6544008936531603717, guid: 6b08130cd86fe6a47be82062b22f7259, type: 3}
   treeLogHalf: {fileID: 2809928136178568926, guid: 1ea0162ee3240cb4da48b4e894644cb6, type: 3}
   treeStump: {fileID: 3296910486322179457}
+  felling:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  fallDown:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  stopLeaves:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   speciesSwitch:
     idInternal: 0
     valueGuidInternal: 
@@ -101,6 +113,12 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0ee94f3ec42e25b41bb70dc7c1ea30fa, type: 2}
+  destroyMtl:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2a9df36abee77f449a1b67a80ad4cf7b, type: 2}
 --- !u!135 &-8858843188837352217
 SphereCollider:
   m_ObjectHideFlags: 0

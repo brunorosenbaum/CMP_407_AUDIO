@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{3B4D3F22-D7E4-E723-F24C-B09DAECEA627}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{DF29EF6A-5559-9D0D-4BE7-5600A26F5F9B}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -237,7 +237,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3395400590" Name="PlayBird" MaxAttenuation="50" DurationType="Infinite">
+				<Event Id="3395400590" Name="PlayBird" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="328161329"/>
 						<MediaRef Id="389046629"/>
@@ -393,5 +393,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D49BA8CA-64A3-3E71-A622-951FE345D628}</FileHash>
+	<FileHash>{FE0034D5-40AD-CA4F-A5CA-768794ABFA21}</FileHash>
 </SoundBanksInfo>

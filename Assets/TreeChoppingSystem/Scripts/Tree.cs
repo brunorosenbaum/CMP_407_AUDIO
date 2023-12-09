@@ -26,10 +26,13 @@ public class Tree : MonoBehaviour, ITreeDamageable {
 
     private HealthSystem healthSystem;
 
+    public GameObject birds; 
+
     //Sounds
     public AK.Wwise.Event felling; 
     public AK.Wwise.Event fallDown; 
     public AK.Wwise.Event stopLeaves; 
+    public AK.Wwise.Event lowerBirdVolume; 
 
     public AK.Wwise.Switch speciesSwitch;
     public AK.Wwise.Switch leavesRustling;
@@ -48,7 +51,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
 
         healthSystem = new HealthSystem(healthAmount);
         healthSystem.OnDead += HealthSystem_OnDead;
-        //treetypeSwitch.SetValue(this.gameObject);
+        
     }
 
     private void HealthSystem_OnDead(object sender, System.EventArgs e) {
@@ -67,7 +70,8 @@ public class Tree : MonoBehaviour, ITreeDamageable {
                 
                 //Play tree felling sound
                 stopLeaves.Post(gameObject); 
-                felling.Post(gameObject); 
+                felling.Post(gameObject);
+                lowerBirdVolume.Post(Birds.birdRef); 
                 break;
             case Type.Log:
                 // Spawn FX

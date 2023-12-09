@@ -126,6 +126,11 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
                
             }
 
+            if (collider.TryGetComponent<StumpSound>(out StumpSound stump) && collider == null)
+            {
+                footstepSwitch.SetValue(gameObject);
+            }
+
             if (collider.CompareTag("Rock"))
             {
                 Debug.Log("Hit a rock");
@@ -176,7 +181,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<StumpSound>(out StumpSound stump)) //If the component is a stump
+        if (other.TryGetComponent<StumpSound>(out StumpSound stump) && other.gameObject) //If the component is a stump
         {
             //Debug.Log("Overlapping with stump sphere radius");
             stump.soundMaterial.SetValue(gameObject);
@@ -184,6 +189,8 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
         }
 
     }
+
+    
 
     private void OnTriggerExit(Collider other)
     {

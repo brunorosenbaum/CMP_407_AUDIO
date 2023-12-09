@@ -11,6 +11,7 @@ public class StumpSound : MonoBehaviour
 
    //This can be done via the editor as well but this is also to showcase it's possible in code. 
    public AK.Wwise.Switch soundMaterial;
+   //public AK.Wwise.Switch destroyMtl;
    private void OnTriggerEnter(Collider other)
    {
        if (other.TryGetComponent<CapsuleCollider>(out CapsuleCollider capsuleCollider)
@@ -25,5 +26,9 @@ public class StumpSound : MonoBehaviour
 
    }
 
-
+   //private void OnDestroy()
+   //{
+   //    soundMaterial = destroyMtl;
+       
+   //}
 }
