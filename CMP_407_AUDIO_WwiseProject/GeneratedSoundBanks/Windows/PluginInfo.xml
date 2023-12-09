@@ -3,8 +3,9 @@
 	<PluginLibs>
 		<PluginLib LibName="Wwise Delay" LibId="6946819" Type="Effect" DLL="AkDelay" StaticLib="AkDelayFX"/>
 		<PluginLib LibName="Wwise Expander" LibId="7143427" Type="Effect" DLL="AkExpander" StaticLib="AkExpanderFX"/>
+		<PluginLib LibName="Wwise Matrix Reverb" LibId="7536643" Type="Effect" DLL="AkMatrixReverb" StaticLib="AkMatrixReverbFX"/>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
 	</PluginLibs>
-	<FileHash>{F5E60FE0-4C2B-DA1E-D5EE-DBA9F5025C9B}</FileHash>
+	<FileHash>{576ECADC-B042-CFFD-2086-27934ABF553C}</FileHash>
 </PluginInfo>

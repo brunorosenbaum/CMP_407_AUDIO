@@ -31,7 +31,6 @@
 						<ObjectRef Name="rock1" ID="{93279DD9-F74A-4C90-807D-431744D5BC26}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock2" ID="{F73FE440-A5B6-4CC7-968A-FE8BEDDACF87}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Woodchopping" ID="{57971F65-324D-4D91-B4A5-96D4B5CC98E5}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="TreeFall" ID="{38114BF5-48B4-4E6D-A1C5-28CFA235B6CE}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopLeaves" ID="{A46F4498-BD55-4ECF-8282-00169FD9F58A}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Campfire" ID="{950021E9-B5FE-4ED0-BF52-1081FD1154D0}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock3" ID="{EC2E90BA-59BD-4F1E-B4C8-C6F42A087990}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>

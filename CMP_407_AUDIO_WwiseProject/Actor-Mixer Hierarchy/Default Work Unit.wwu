@@ -12,6 +12,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ModifierList>
 								<ModifierInfo>
@@ -271,6 +272,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
 										<ModifierInfo>
@@ -438,6 +440,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<SwitchContainer Name="Footsteps" ID="{90B137E1-1413-4392-B692-DBB4309F98CF}" ShortID="444192664">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
@@ -811,6 +816,7 @@
 							</ModifierList>
 						</Property>
 						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -1097,6 +1103,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -1125,12 +1132,28 @@
 				<Sound Name="FallDown" ID="{97D40D56-BB2B-4273-9FD5-F6D230033848}" ShortID="556462098">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{280BDAB4-76A2-475E-B340-F45435E36624}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="177"/>
+											<Property Name="Min" Type="Real64" Value="-202"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom>
 								<Attenuation Name="Attenuation (Custom)" ID="{75C592B2-D6C1-41DE-8615-AACBE62B0BD1}" ShortID="302745698">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="30"/>
+									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -1143,10 +1166,10 @@
 															<XPos>0</XPos>
 															<YPos>0</YPos>
 															<Flags>5</Flags>
-															<SegmentShape>Log1</SegmentShape>
+															<SegmentShape>Log3</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>100</XPos>
+															<XPos>30</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -1161,16 +1184,92 @@
 											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
 										</VolumeWetUserUsage>
 										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None">
+												<Curve Name="LowPassFilter" ID="{0CBEB306-9F84-4AB1-A9DD-9C6B156BB028}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="65537"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Exp1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>30</XPos>
+															<YPos>100</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
 										</LowPassFilterUsage>
 										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="HighPassFilter" ID="{3978B30F-165E-4ED7-A592-646B6C69A63B}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="65537"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Exp1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>30</XPos>
+															<YPos>100</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
 										</HighPassFilterUsage>
 										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="Spread" ID="{A6E43618-A097-4E37-9753-3273059ED3C7}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="1"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>100</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>30</XPos>
+															<YPos>0</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
 										</SpreadUsage>
 										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="Focus" ID="{3FE979D7-67FB-4E38-86AD-F52CA6F301DA}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="1"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>100</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>30</XPos>
+															<YPos>0</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
 										</FocusUsage>
 										<ObstructionVolumeUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
@@ -1200,7 +1299,26 @@
 											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 										</DiffractionHPFUsage>
 										<TransmissionVolumeUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="TransmissionVolume" ID="{0E1385E6-7AC2-4B04-A420-AA876D1F6FE2}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
 										</TransmissionVolumeUsage>
 										<TransmissionLPFUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>

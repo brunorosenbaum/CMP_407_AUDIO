@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{697CAF8F-EE2F-AE8B-9CEA-C367B5BE3BFC}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{C31824C3-6057-225C-F5DC-13BC4A1ABCC6}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -313,10 +313,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9E97C1C2-1C19-A5F6-A535-735C8AC632EC}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{606B4D9B-A989-5488-8EEF-52A4F49EE5F2}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="3546444380" Name="Big_Garage1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -325,6 +328,15 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="463204885" Name="ReverbAuxBus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3546444380"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<SwitchGroups>
 				<SwitchGroup Id="582824249" Name="Leaves">
 					<Switches>
@@ -349,5 +361,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{07E9599B-9414-7032-1306-A21DF856BEA8}</FileHash>
+	<FileHash>{99D3E150-283C-CF37-DD04-8F4BDFD9B8A6}</FileHash>
 </SoundBanksInfo>
