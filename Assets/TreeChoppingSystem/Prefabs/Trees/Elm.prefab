@@ -457,6 +457,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b9451535433fc7649872fce4b3a86123, type: 2}
+  fallDown:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f9f41e8d3307f2b4caefbcb93de1654b, type: 2}
   stopLeaves:
     idInternal: 0
     valueGuidInternal: 
@@ -512,7 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3535d6217c7090b4db4699d8ab78e3a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: d1bbb3b5cd2be4c0
+  triggerList: d1bbb3b5
   useOtherObject: 0
   data:
     idInternal: 0

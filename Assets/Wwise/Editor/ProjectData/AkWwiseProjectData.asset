@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7cee44ceb3472d4c882ea4fb97568433
     GuidInternal: 
-    m_lastTime: -8584996061586762084
+    m_lastTime: -8584995426713247403
     List:
     - name: Soundbank407
       guid: e3fb2f3a317a674bbd08e44ed1b832bc
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8826e1b14e13434da5cdf4e90db0ee93
     GuidInternal: 
-    m_lastTime: -8584996071216767353
+    m_lastTime: -8584995426713047353
     List:
     - name: Campfire
       guid: e9210095feb5d04ebf521081fd1154d0
@@ -198,6 +198,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.25580359
       minDuration: 0.18350588
+    - name: StopLeaves
+      guid: 98446fa455bdcf4e828200169fd9f58a
+      id: 3349846273
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: StopLeaves
+        ObjectType: 3
+        guid: 98446fa455bdcf4e828200169fd9f58a
+      Path: Events\Default Work Unit\StopLeaves
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TreeFelling
+      guid: 7b8150f83e689c479043bdc9b8e1bdfa
+      id: 1724430086
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: TreeFelling
+        ObjectType: 3
+        guid: 7b8150f83e689c479043bdc9b8e1bdfa
+      Path: Events\Default Work Unit\TreeFelling
+      maxAttenuation: 100
+      maxDuration: 4.887156
+      minDuration: 4.109592
     - name: Woodchopping
       guid: 651f97574d32914db4a596d4b5cc98e5
       id: 1990903982
@@ -454,7 +488,7 @@ MonoBehaviour:
     m_lastTime: -8585003227769536901
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000150000001700000037000000380000004900000054000000550000005d0000005e0000009700000098000000ce000000cf000000d0000000
+  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000170000003700000038000000400000004100000047000000480000004900000054000000550000005d0000005e00000066000000670000009700000098000000ce000000cf000000d0000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

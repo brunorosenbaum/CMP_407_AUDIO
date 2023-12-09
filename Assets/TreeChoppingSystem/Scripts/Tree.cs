@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey.Utils;
 using CodeMonkey;
+using Random = UnityEngine.Random;
 
 public class Tree : MonoBehaviour, ITreeDamageable {
 
@@ -26,6 +28,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
 
     //Sounds
     public AK.Wwise.Event felling; 
+    public AK.Wwise.Event fallDown; 
     public AK.Wwise.Event stopLeaves; 
 
     public AK.Wwise.Switch speciesSwitch;
@@ -97,27 +100,31 @@ public class Tree : MonoBehaviour, ITreeDamageable {
         healthSystem.Damage(amount);
     }
 
-    private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.TryGetComponent<ITreeDamageable>(out ITreeDamageable treeDamageable)) {
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.TryGetComponent<ITreeDamageable>(out ITreeDamageable treeDamageable))
+        {
             if (collision.relativeVelocity.magnitude > 1f)
             {
-                ////Play chopping sound depending on tree species
-                //switch (treeSpecies)
-                //{
-                //    default:
-                //    case Species.Birch:
-                        
-                //        break;
-                //    case Species.Elm:
-                //        break;
-                //    case Species.Pine:
-                //        break;
-                //}
                 int damageAmount = Random.Range(5, 20);
                 DamagePopup.Create(collision.GetContact(0).point, damageAmount, damageAmount > 14);
                 treeDamageable.Damage(damageAmount);
             }
         }
+
+        if (collision.gameObject.CompareTag("Ground") && treeType == Type.Log)
+        {
+            foreach (ContactPoint contact in collision.contacts)
+            {
+                if (gameObject.GetComponent<Rigidbody>().velocity.magnitude > 1f)
+                {
+                    //Debug.Log("CODE RUNNING");
+                    fallDown.Post(gameObject); 
+                }
+            }
+
+        }
+
     }
 
 }

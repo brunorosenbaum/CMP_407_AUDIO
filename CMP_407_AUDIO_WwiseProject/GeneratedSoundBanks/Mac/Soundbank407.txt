@@ -6,6 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1931646578	Campfire			\Default Work Unit\Campfire	
 	1990903982	Woodchopping			\Default Work Unit\Woodchopping	
 	2144363834	Rock			\Default Work Unit\Rock	
+	2512384458	Fall			\Default Work Unit\Fall	
 	3349846273	StopLeaves			\Default Work Unit\StopLeaves	
 	3833651337	Jump			\Default Work Unit\Jump	
 
@@ -45,6 +46,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	849490016	pineLeaves	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\pineLeaves_806A9D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leaves\pineLeaves		546144
 	897192023	jump	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\jump_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\JumpLand\jump		39208
 	951310688	rock1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\rock1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\RockHit\rock1		38604
+	1006074681	FallDown	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\fallDown_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FallDown		192914
 	1028259297	twigs2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\twigs2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Twigs\twigs2		67636
 	1028684433	birchLeaves	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\birchLeaves_806A9D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leaves\birchLeaves		542472
 	1042804794	landing	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\landing_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\JumpLand\landing		55044

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{866E1427-FC70-DB17-04CA-F7A449668B5A}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{697CAF8F-EE2F-AE8B-9CEA-C367B5BE3BFC}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -77,6 +77,10 @@
 					<ShortName>rock1.wav</ShortName>
 					<CachePath>SFX/rock1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1006074681" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>fallDown.wav</ShortName>
+					<CachePath>SFX/fallDown_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1028259297" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>twigs2.wav</ShortName>
 					<CachePath>SFX/twigs2_818F3B66.wem</CachePath>
@@ -102,6 +106,11 @@
 				<Event Id="1931646578" Name="Campfire" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="763772957"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2512384458" Name="Fall" MaxAttenuation="30" DurationType="OneShot" DurationMin="1.8133295" DurationMax="2.257106">
+					<MediaRefs>
+						<MediaRef Id="1006074681"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1866025847" Name="Footstep" DurationType="OneShot" DurationMin="0.31340146" DurationMax="0.5210641">
@@ -340,5 +349,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F0C316FF-6D35-0C81-CAE8-AC1E2DFBD372}</FileHash>
+	<FileHash>{07E9599B-9414-7032-1306-A21DF856BEA8}</FileHash>
 </SoundBanksInfo>

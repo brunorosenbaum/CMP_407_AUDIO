@@ -282,6 +282,18 @@ MonoBehaviour:
   treeLog: {fileID: 6544008936531603717}
   treeLogHalf: {fileID: 2809928136178568926, guid: 4a0c012d5f99ab4408b158ad9900f7f8, type: 3}
   treeStump: {fileID: 8372748528969190668, guid: b83d717870547cc4282774f0bb349a9c, type: 3}
+  felling:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  fallDown:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f9f41e8d3307f2b4caefbcb93de1654b, type: 2}
+  stopLeaves:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   speciesSwitch:
     idInternal: 0
     valueGuidInternal: 

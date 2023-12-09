@@ -96,10 +96,35 @@
 						<Action Name="" ID="{07768768-94FD-47AF-A107-2927E4385AEA}" ShortID="505622844">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Leaves" ID="{D18AEBE7-B695-4512-9506-8AFA827A74EF}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TreeFall" ID="{38114BF5-48B4-4E6D-A1C5-28CFA235B6CE}">
+					<ChildrenList>
+						<Action Name="" ID="{B8A08F4D-F172-4D53-BEE5-01D53BE3A6B5}" ShortID="996196360">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FallDown" ID="{97D40D56-BB2B-4273-9FD5-F6D230033848}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fall" ID="{EDEDE40D-B5F5-40A2-88C0-1320DA5CA9A6}">
+					<ChildrenList>
+						<Action Name="" ID="{B7F224AF-66E8-474E-B60D-2510B9125348}" ShortID="606602543">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FallDown" ID="{97D40D56-BB2B-4273-9FD5-F6D230033848}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
