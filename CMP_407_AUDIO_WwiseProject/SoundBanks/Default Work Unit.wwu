@@ -8,6 +8,7 @@
 						<ObjectRef Name="Fall" ID="{EDEDE40D-B5F5-40A2-88C0-1320DA5CA9A6}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Birch" ID="{D64D6349-8DDD-416B-9C24-27381242C963}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RockHit" ID="{6D21A7C9-12FE-419A-B2C2-98035F418334}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Birds" ID="{D3F8D6EB-B495-41D8-A7BF-6159A55E59A2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="campfire" ID="{F3C5BF02-7A7E-41E2-9983-D1285FB4059F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="elmLeaves" ID="{A5EF6951-5CF6-41F8-B863-F0C39E8D8C0F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FallDown" ID="{97D40D56-BB2B-4273-9FD5-F6D230033848}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
@@ -16,10 +17,16 @@
 						<ObjectRef Name="Pine" ID="{149944F4-F245-4373-A9A5-D09ABB69DE73}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{90B137E1-1413-4392-B692-DBB4309F98CF}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grass" ID="{7D0E2E83-8CFC-43CA-84B9-A267AB08714F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BirdVolume" ID="{2CAFD842-8345-43D2-8280-ED7BFFAE7834}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BirdsVolume" ID="{059D49FB-E7EA-44EE-9E03-1A5659B66F6E}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Leaves" ID="{D18AEBE7-B695-4512-9506-8AFA827A74EF}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="crows" ID="{F17E4D0C-E0D1-45E7-B6A5-F35279E90DBC}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WoodChopping" ID="{16386F3D-EE6B-45F7-AE3C-2477574417BA}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Rock" ID="{E62DD39D-8EA8-46D8-AD1D-6E43D061D0B8}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayBird" ID="{2BC5F095-C0F5-4795-AAF1-9DA22F78DA0A}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TreeFelling" ID="{F850817B-683E-479C-9043-BDC9B8E1BDFA}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="nightingale" ID="{9048A1E7-A263-47CD-9192-77CFDF9215E4}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayBirds" ID="{9D6AD679-95AA-47D9-A503-A1CF07F36E18}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Land" ID="{5AE83D05-1EC4-4811-A17B-5FAE89C410DD}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Felling" ID="{607BDBAA-3431-4847-8F95-2D0B87F24197}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="pineLeaves" ID="{528FD5FA-89EF-4929-AAD0-49A3A0740DA9}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
@@ -29,6 +36,7 @@
 						<ObjectRef Name="birchLeaves" ID="{1E02EFB9-C134-4AFE-AE0E-2A1EB5E9E26C}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep" ID="{8AA9D53C-EDC7-4C7C-B975-E20E1E163892}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock1" ID="{93279DD9-F74A-4C90-807D-431744D5BC26}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="cuckoo" ID="{2AA0FF16-A7DA-4CA0-907B-0E3B669DD71D}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock2" ID="{F73FE440-A5B6-4CC7-968A-FE8BEDDACF87}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Woodchopping" ID="{57971F65-324D-4D91-B4A5-96D4B5CC98E5}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopLeaves" ID="{A46F4498-BD55-4ECF-8282-00169FD9F58A}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>

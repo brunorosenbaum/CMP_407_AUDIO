@@ -119,6 +119,33 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlayBird" ID="{2BC5F095-C0F5-4795-AAF1-9DA22F78DA0A}">
+					<ChildrenList>
+						<Action Name="" ID="{C5CEFDB4-ACEF-4E60-B508-FF8B3220A370}" ShortID="1046966651">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Birds" ID="{D3F8D6EB-B495-41D8-A7BF-6159A55E59A2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BirdVolume" ID="{2CAFD842-8345-43D2-8280-ED7BFFAE7834}">
+					<ChildrenList>
+						<Action Name="" ID="{D2C2405D-DC2E-4124-AE57-5A6BF6C5F298}" ShortID="480836890">
+							<PropertyList>
+								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Birds" ID="{D3F8D6EB-B495-41D8-A7BF-6159A55E59A2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

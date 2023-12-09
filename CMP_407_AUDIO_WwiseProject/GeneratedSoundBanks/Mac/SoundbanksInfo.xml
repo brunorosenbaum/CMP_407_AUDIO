@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{C31824C3-6057-225C-F5DC-13BC4A1ABCC6}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{3B4D3F22-D7E4-E723-F24C-B09DAECEA627}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -36,6 +36,14 @@
 				<File Id="254406503" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>tree2Chop.wav</ShortName>
 					<CachePath>SFX/tree2Chop_818F3B66.wem</CachePath>
+				</File>
+				<File Id="328161329" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>nightingale.wav</ShortName>
+					<CachePath>SFX/nightingale_05A4D402.wem</CachePath>
+				</File>
+				<File Id="389046629" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>cuckoo.wav</ShortName>
+					<CachePath>SFX/cuckoo_05A4D402.wem</CachePath>
 				</File>
 				<File Id="417166193" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_3.wav</ShortName>
@@ -77,6 +85,10 @@
 					<ShortName>rock1.wav</ShortName>
 					<CachePath>SFX/rock1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="993206750" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>crows.wav</ShortName>
+					<CachePath>SFX/crows_05A4D402.wem</CachePath>
+				</File>
 				<File Id="1006074681" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>fallDown.wav</ShortName>
 					<CachePath>SFX/fallDown_818F3B66.wem</CachePath>
@@ -103,6 +115,13 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
+				<Event Id="1701802898" Name="BirdVolume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="328161329"/>
+						<MediaRef Id="389046629"/>
+						<MediaRef Id="993206750"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1931646578" Name="Campfire" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="763772957"/>
@@ -218,6 +237,13 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3395400590" Name="PlayBird" MaxAttenuation="50" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="328161329"/>
+						<MediaRef Id="389046629"/>
+						<MediaRef Id="993206750"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2144363834" Name="Rock" DurationType="OneShot" DurationMin="0.18350588" DurationMax="0.25580359">
 					<MediaRefs>
 						<MediaRef Id="35374810"/>
@@ -290,6 +316,9 @@
 					</SwitchContainers>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="1240670792" Name="Distance"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="582824249" Name="Leaves">
 					<Switches>
@@ -313,7 +342,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{606B4D9B-A989-5488-8EEF-52A4F49EE5F2}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BC3859FA-8D67-9DEE-6455-45BF5CB15AF3}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -337,6 +366,9 @@
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="1240670792" Name="Distance"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="582824249" Name="Leaves">
 					<Switches>
@@ -361,5 +393,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{99D3E150-283C-CF37-DD04-8F4BDFD9B8A6}</FileHash>
+	<FileHash>{D49BA8CA-64A3-3E71-A622-951FE345D628}</FileHash>
 </SoundBanksInfo>

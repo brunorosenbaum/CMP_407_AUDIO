@@ -13,12 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BIRDVOLUME = 1701802898U;
         static const AkUniqueID CAMPFIRE = 1931646578U;
         static const AkUniqueID FALL = 2512384458U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID LEAVES = 582824249U;
+        static const AkUniqueID PLAYBIRD = 3395400590U;
         static const AkUniqueID ROCK = 2144363834U;
         static const AkUniqueID STOPLEAVES = 3349846273U;
         static const AkUniqueID TREEFELLING = 1724430086U;
@@ -63,6 +65,11 @@ namespace AK
         } // namespace WOODCHOPPING
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID DISTANCE = 1240670792U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
