@@ -31,8 +31,11 @@ public class Tree : MonoBehaviour, ITreeDamageable {
     //Sounds
     public AK.Wwise.Event felling; 
     public AK.Wwise.Event fallDown; 
+    public AK.Wwise.Event rockLog; 
+    public AK.Wwise.Event logHit; 
     public AK.Wwise.Event stopLeaves; 
     public AK.Wwise.Event lowerBirdVolume; 
+
 
     public AK.Wwise.Switch speciesSwitch;
     public AK.Wwise.Switch leavesRustling;
@@ -110,24 +113,31 @@ public class Tree : MonoBehaviour, ITreeDamageable {
         {
             if (collision.relativeVelocity.magnitude > 1f)
             {
+                logHit.Post(gameObject); 
                 int damageAmount = Random.Range(5, 20);
                 DamagePopup.Create(collision.GetContact(0).point, damageAmount, damageAmount > 14);
                 treeDamageable.Damage(damageAmount);
             }
         }
 
-        if (collision.gameObject.CompareTag("Ground") && treeType == Type.Log)
+        if ( treeType == Type.Log || treeType == Type.LogHalf)
         {
             foreach (ContactPoint contact in collision.contacts)
             {
-                if (gameObject.GetComponent<Rigidbody>().velocity.magnitude > 1f)
+                if (gameObject.GetComponent<Rigidbody>().velocity.magnitude > 0.1f)
                 {
-                    //Debug.Log("CODE RUNNING");
-                    fallDown.Post(gameObject); 
+                    if(collision.gameObject.CompareTag("Ground"))
+                        fallDown.Post(gameObject);
+                    if (collision.gameObject.CompareTag("Rock"))
+                        rockLog.Post(gameObject); 
+
+
                 }
             }
 
         }
+
+
 
     }
 

@@ -9,10 +9,14 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{DF29EF6A-5559-9D0D-4BE7-5600A26F5F9B}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{56AD1111-F47E-8CDC-FB59-88D4ADA2B700}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
+				<File Id="20979341" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bump1.wav</ShortName>
+					<CachePath>SFX/bump1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="31562484" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>twigs1.wav</ShortName>
 					<CachePath>SFX/twigs1_818F3B66.wem</CachePath>
@@ -33,9 +37,17 @@
 					<ShortName>footstep_1.wav</ShortName>
 					<CachePath>SFX/footstep_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="172872440" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bump2.wav</ShortName>
+					<CachePath>SFX/bump2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="254406503" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>tree2Chop.wav</ShortName>
 					<CachePath>SFX/tree2Chop_818F3B66.wem</CachePath>
+				</File>
+				<File Id="255699078" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>treeHit4.wav</ShortName>
+					<CachePath>SFX/treeHit4_818F3B66.wem</CachePath>
 				</File>
 				<File Id="328161329" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>nightingale.wav</ShortName>
@@ -53,6 +65,14 @@
 					<ShortName>tree3Chop.wav</ShortName>
 					<CachePath>SFX/tree3Chop_818F3B66.wem</CachePath>
 				</File>
+				<File Id="493674708" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bump3.wav</ShortName>
+					<CachePath>SFX/bump3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="563835414" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>logRockHit.wav</ShortName>
+					<CachePath>SFX/logRockHit_818F3B66.wem</CachePath>
+				</File>
 				<File Id="592123486" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_2.wav</ShortName>
 					<CachePath>SFX/footstep_2_818F3B66.wem</CachePath>
@@ -64,6 +84,10 @@
 				<File Id="628621901" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>felling.wav</ShortName>
 					<CachePath>SFX/felling_818F3B66.wem</CachePath>
+				</File>
+				<File Id="651362762" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>logRockHit2.wav</ShortName>
+					<CachePath>SFX/logRockHit2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="704944141" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>elmLeaves.wav</ShortName>
@@ -81,9 +105,21 @@
 					<ShortName>jump.wav</ShortName>
 					<CachePath>SFX/jump_818F3B66.wem</CachePath>
 				</File>
+				<File Id="923576847" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>treeHit3.wav</ShortName>
+					<CachePath>SFX/treeHit3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="950933815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>treesHit1.wav</ShortName>
+					<CachePath>SFX/treesHit1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="951310688" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rock1.wav</ShortName>
 					<CachePath>SFX/rock1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="986618742" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>treesHit2.wav</ShortName>
+					<CachePath>SFX/treesHit2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="993206750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crows.wav</ShortName>
@@ -122,12 +158,19 @@
 						<MediaRef Id="993206750"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="643598423" Name="Bumping" DurationType="OneShot" DurationMin="0.08699255" DurationMax="0.23990288">
+					<MediaRefs>
+						<MediaRef Id="20979341"/>
+						<MediaRef Id="172872440"/>
+						<MediaRef Id="493674708"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1931646578" Name="Campfire" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="763772957"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2512384458" Name="Fall" MaxAttenuation="30" DurationType="OneShot" DurationMin="1.8133295" DurationMax="2.257106">
+				<Event Id="2512384458" Name="Fall" MaxAttenuation="30" DurationType="OneShot" DurationMin="1.789398" DurationMax="2.2545002">
 					<MediaRefs>
 						<MediaRef Id="1006074681"/>
 					</MediaRefs>
@@ -236,6 +279,25 @@
 							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="92328443" Name="LogCollision" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.08363312" DurationMax="0.56029564">
+					<MediaRefs>
+						<MediaRef Id="255699078"/>
+						<MediaRef Id="923576847"/>
+						<MediaRef Id="950933815"/>
+						<MediaRef Id="986618742"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4181074826" Name="LogRockCollision" DurationType="OneShot" DurationMin="0.32961395" DurationMax="0.5654403">
+					<MediaRefs>
+						<MediaRef Id="563835414"/>
+						<MediaRef Id="651362762"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2180422931"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="3395400590" Name="PlayBird" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
@@ -393,5 +455,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{16B36A42-ABF4-F7E3-6189-626D260D158F}</FileHash>
+	<FileHash>{1B76173D-598D-F829-4D8C-E8EC221EEA5C}</FileHash>
 </SoundBanksInfo>

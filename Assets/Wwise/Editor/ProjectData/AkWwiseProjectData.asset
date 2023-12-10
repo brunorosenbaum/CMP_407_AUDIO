@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e55e2e2b134d54a96278410134d01cc
     GuidInternal: 
-    m_lastTime: -8585003227770917204
+    m_lastTime: -8584995183419769743
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: ReverbAuxBus
+      guid: a7de3a646572ef4b99ef7ea030816efb
+      id: 463204885
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e55e2e2b134d54a96278410134d01cc
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbAuxBus
+        ObjectType: 1
+        guid: a7de3a646572ef4b99ef7ea030816efb
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbAuxBus
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7cee44ceb3472d4c882ea4fb97568433
     GuidInternal: 
-    m_lastTime: -8584995281728418541
+    m_lastTime: -8584994420325314770
     List:
     - name: Soundbank407
       guid: e3fb2f3a317a674bbd08e44ed1b832bc
@@ -94,8 +111,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8826e1b14e13434da5cdf4e90db0ee93
     GuidInternal: 
-    m_lastTime: -8584995281728210165
+    m_lastTime: -8584994420325085975
     List:
+    - name: BirdVolume
+      guid: 42d8af2c4583d2438280ed7bffae7834
+      id: 1701802898
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: BirdVolume
+        ObjectType: 3
+        guid: 42d8af2c4583d2438280ed7bffae7834
+      Path: Events\Default Work Unit\BirdVolume
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Bumping
+      guid: ad90e26fe1945c4da67beac1b0a66b8d
+      id: 643598423
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: Bumping
+        ObjectType: 3
+        guid: ad90e26fe1945c4da67beac1b0a66b8d
+      Path: Events\Default Work Unit\Bumping
+      maxAttenuation: 0
+      maxDuration: 0.23990288
+      minDuration: 0.08699255
     - name: Campfire
       guid: e9210095feb5d04ebf521081fd1154d0
       id: 1931646578
@@ -128,8 +179,8 @@ MonoBehaviour:
         guid: 0de4ededf5b5a24088c01320da5ca9a6
       Path: Events\Default Work Unit\Fall
       maxAttenuation: 30
-      maxDuration: 2.257106
-      minDuration: 1.8133295
+      maxDuration: 2.2545002
+      minDuration: 1.789398
     - name: Footstep
       guid: 3cd5a98ac7ed7c4cb975e20e1e163892
       id: 1866025847
@@ -198,6 +249,57 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
+    - name: LogCollision
+      guid: d0a3b295fa7ce140968a4ca635cfdf60
+      id: 92328443
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: LogCollision
+        ObjectType: 3
+        guid: d0a3b295fa7ce140968a4ca635cfdf60
+      Path: Events\Default Work Unit\LogCollision
+      maxAttenuation: 100
+      maxDuration: 0.56029564
+      minDuration: 0.08363312
+    - name: LogRockCollision
+      guid: 4a0b44deaf3b5440828aaba0dc7cd62f
+      id: 4181074826
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: LogRockCollision
+        ObjectType: 3
+        guid: 4a0b44deaf3b5440828aaba0dc7cd62f
+      Path: Events\Default Work Unit\LogRockCollision
+      maxAttenuation: 0
+      maxDuration: 0.5654403
+      minDuration: 0.32961395
+    - name: PlayBird
+      guid: 95f0c52bf5c09547aaf19da22f78da0a
+      id: 3395400590
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: PlayBird
+        ObjectType: 3
+        guid: 95f0c52bf5c09547aaf19da22f78da0a
+      Path: Events\Default Work Unit\PlayBird
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: Rock
       guid: 9dd32de6a88ed846ad1d6e43d061d0b8
       id: 2144363834
@@ -232,23 +334,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: TreeFall
-      guid: f54b1138b4486d4ea1c528cfa235b6ce
-      id: 3165238254
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 8826e1b14e13434da5cdf4e90db0ee93
-      - ElementName: TreeFall
-        ObjectType: 3
-        guid: f54b1138b4486d4ea1c528cfa235b6ce
-      Path: Events\Default Work Unit\TreeFall
-      maxAttenuation: 100
-      maxDuration: 2.0085313
-      minDuration: 2.0085313
     - name: TreeFelling
       guid: 7b8150f83e689c479043bdc9b8e1bdfa
       id: 1724430086
@@ -295,8 +380,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: aa0f4dbd96cab548b960f720e5045184
     GuidInternal: 
-    m_lastTime: -8585003227770417053
-    List: []
+    m_lastTime: -8584994546182106288
+    List:
+    - name: Distance
+      guid: 185cc211d611c84986ac82940f0a1bb2
+      id: 1240670792
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: aa0f4dbd96cab548b960f720e5045184
+      - ElementName: Distance
+        ObjectType: 13
+        guid: 185cc211d611c84986ac82940f0a1bb2
+      Path: Game Parameters\Default Work Unit\Distance
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -522,7 +621,7 @@ MonoBehaviour:
     m_lastTime: -8585003227769536901
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000190000001a0000003700000038000000400000004100000047000000480000004900000054000000550000005d0000005e00000066000000670000009700000098000000ce000000cf000000d0000000
+  ExpandedWaapiItemIds: 0200000003000000040000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000190000001a0000001c0000001d0000001f0000003700000038000000400000004100000047000000480000004900000054000000550000005d0000005e00000066000000670000009700000098000000ce000000cf000000d0000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

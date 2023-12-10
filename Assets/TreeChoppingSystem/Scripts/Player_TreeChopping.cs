@@ -40,6 +40,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     public AK.Wwise.Event jump; 
     public AK.Wwise.Event landing;
     public AK.Wwise.Event rockHit; 
+    public AK.Wwise.Event logCollision;
 
     public AK.Wwise.Switch footstepSwitch; 
 
@@ -58,7 +59,17 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     {
         HandleAttack();
         HandleMovement();
-        //SwitchFootsteps();
+        
+        Collider[] colliderArray = Physics.OverlapBox(hitArea.transform.position, Vector3.one * .3f, Quaternion.identity, 0, QueryTriggerInteraction.UseGlobal);
+        foreach (Collider collider in colliderArray)
+        {
+            if (collider.TryGetComponent<Tree>(out Tree tree) /*&& controller.velocity.x > 0*/)
+            {
+              
+                Debug.Log("CODE RUNNING");
+                logCollision.Post(gameObject);
+            }
+        }
 
         if (((Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.0f) ||
              (Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.0f)))
@@ -102,9 +113,11 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
         // Find objects in Hit Area
         Vector3 colliderSize = Vector3.one * .3f;
         Collider[] colliderArray = Physics.OverlapBox(hitArea.transform.position, colliderSize);
-        foreach (Collider collider in colliderArray) {
-            if (collider.TryGetComponent<ITreeDamageable>(out ITreeDamageable treeDamageable)) {
-
+        foreach (Collider collider in colliderArray)
+        {
+            if (collider.TryGetComponent<ITreeDamageable>(out ITreeDamageable treeDamageable))
+            {
+                //Physics.IgnoreCollision(collider.GetComponent<SphereCollider>(), hitArea.GetComponent<BoxCollider>());
                 //Play wood chopping sound
                 if (collider.TryGetComponent<Tree>(out Tree tree))
                 {
@@ -119,11 +132,11 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
                 // Damage Tree
                 treeDamageable.Damage(damageAmount);
 
-                
+
                 // Shake Camera
                 treeShake.GenerateImpulse();
 
-               
+
             }
 
             if (collider.TryGetComponent<StumpSound>(out StumpSound stump) && collider == null)
@@ -133,11 +146,11 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
             if (collider.CompareTag("Rock"))
             {
-                Debug.Log("Hit a rock");
+
                 rockHit.Post(gameObject);
 
-            } 
-            // Spawn FX
+            }
+            
             Instantiate(fxTreeHit, hitArea.transform.position, Quaternion.identity);
             Instantiate(fxTreeHitBlocks, hitArea.transform.position, Quaternion.identity);
         }
@@ -179,6 +192,47 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
     }
 
+    //private void OnTriggerStay(Collider collider)
+    //{
+    //    if (collider.TryGetComponent<ITreeDamageable>(out ITreeDamageable treeDamageable))
+    //    {
+    //        if (Input.GetMouseButtonDown(0))
+    //        {
+    //            Play wood chopping sound
+    //            if (collider.TryGetComponent<Tree>(out Tree tree))
+    //            {
+    //                tree.speciesSwitch.SetValue(gameObject);
+    //                woodChopping.Post(gameObject);
+    //            }
+
+    //            Damage Popup
+    //            int damageAmount = UnityEngine.Random.Range(10, 30);
+    //            DamagePopup.Create(hitArea.transform.position, damageAmount, damageAmount > 14);
+
+    //            Damage Tree
+    //            treeDamageable.Damage(damageAmount);
+
+
+    //            Shake Camera
+    //            treeShake.GenerateImpulse();
+
+
+    //        }
+
+    //        if (collider.TryGetComponent<StumpSound>(out StumpSound stump) && collider == null)
+    //        {
+    //            footstepSwitch.SetValue(gameObject);
+    //        }
+
+    //        if (collider.CompareTag("Rock"))
+    //        {
+
+    //            rockHit.Post(gameObject);
+
+    //        }
+    //    }
+    //}
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent<StumpSound>(out StumpSound stump) && other.gameObject) //If the component is a stump
@@ -188,9 +242,16 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
         }
 
+
     }
 
-    
+    private void OnCollisionEnter(Collision collision)
+    {
+        //if (collision.gameObject.TryGetComponent<Tree>(out Tree tree) && controller.velocity.x > 1f)
+        //{
+        //    logCollision.Post(gameObject); 
+        //}
+    }
 
     private void OnTriggerExit(Collider other)
     {

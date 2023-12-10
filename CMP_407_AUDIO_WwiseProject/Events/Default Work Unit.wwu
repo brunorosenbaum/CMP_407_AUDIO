@@ -136,11 +136,45 @@
 							<PropertyList>
 								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 								<Property Name="ActionType" Type="int16" Value="12"/>
-								<Property Name="Volume" Type="Real64" Value="-5"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Birds" ID="{D3F8D6EB-B495-41D8-A7BF-6159A55E59A2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LogCollision" ID="{95B2A3D0-7CFA-40E1-968A-4CA635CFDF60}">
+					<ChildrenList>
+						<Action Name="" ID="{496EF54F-B38C-4DE6-95B6-EB6DF1A8D305}" ShortID="444722343">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TreesHit" ID="{0DDD1CDB-2218-402B-946F-14E27DA926D2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LogRockCollision" ID="{DE440B4A-3BAF-4054-828A-ABA0DC7CD62F}">
+					<ChildrenList>
+						<Action Name="" ID="{54C07531-9BA2-4F5E-9475-A5C7B5091612}" ShortID="897374456">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LogHitRock" ID="{C217EF92-0A8B-480D-AC26-6FBA01D7F5E5}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Bumping" ID="{6FE290AD-94E1-4D5C-A67B-EAC1B0A66B8D}">
+					<ChildrenList>
+						<Action Name="" ID="{F5B4B4B7-C57F-40AE-B294-4550973643C9}" ShortID="713858427">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bumping" ID="{0A5D4AFE-2DB9-4DB7-BF6F-C75103B7BA2A}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
