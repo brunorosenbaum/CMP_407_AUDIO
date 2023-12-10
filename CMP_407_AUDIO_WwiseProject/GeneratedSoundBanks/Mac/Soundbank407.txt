@@ -3,6 +3,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	582824249	Leaves			\Default Work Unit\Leaves	
 	643598423	Bumping			\Default Work Unit\Bumping	
 	674522502	Land			\Default Work Unit\Land	
+	733948675	IncreaseWind			\Default Work Unit\IncreaseWind	
+	1592727253	PlayWind			\Default Work Unit\PlayWind	
 	1701802898	BirdVolume			\Default Work Unit\BirdVolume	
 	1724430086	TreeFelling			\Default Work Unit\TreeFelling	
 	1866025847	Footstep			\Default Work Unit\Footstep	
@@ -31,10 +33,12 @@ Switch	ID	Name	Switch Group			Notes
 	4248645337	Grass	Footsteps			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	733948675	IncreaseWind			\Default Work Unit\IncreaseWind	
 	1240670792	Distance			\Default Work Unit\Distance	
 
 Effect plug-ins	ID	Name	Type				Notes
 	688170875	Expander (Custom)	Wwise Expander			
+	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
 	2180422931	One_Tap_Quarter_Second	Wwise Delay			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -64,6 +68,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	923576847	treeHit3	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\treeHit3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TreesHit\treeHit3		48016
 	950933815	treesHit1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\treesHit1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TreesHit\treesHit1		77388
 	951310688	rock1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\rock1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\RockHit\rock1		38604
+	985975637	wind	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\wind_05A4D402.wem		\Actor-Mixer Hierarchy\Default Work Unit\wind		29685
 	986618742	treesHit2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\treesHit2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TreesHit\treesHit2		18120
 	993206750	crows	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\crows_05A4D402.wem		\Actor-Mixer Hierarchy\Default Work Unit\Birds\crows		183717
 	1006074681	FallDown	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Mac\SFX\fallDown_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FallDown		192914

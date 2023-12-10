@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using CodeMonkey.Utils;
 using CodeMonkey;
@@ -26,7 +27,10 @@ public class Tree : MonoBehaviour, ITreeDamageable {
 
     private HealthSystem healthSystem;
 
-    public GameObject birds; 
+   
+    public GameObject birds;
+
+    
 
     //Sounds
     public AK.Wwise.Event felling; 
@@ -61,7 +65,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
     private void Start()
     {
         leavesRustling.SetValue(gameObject);
-        leavesPlaying.Post(gameObject); 
+        leavesPlaying.Post(gameObject);
 
     }
 
@@ -82,7 +86,9 @@ public class Tree : MonoBehaviour, ITreeDamageable {
                 //Play tree felling sound
                 stopLeaves.Post(gameObject); 
                 felling.Post(gameObject);
-                lowerBirdVolume.Post(Birds.birdRef); 
+                lowerBirdVolume.Post(Birds.birdRef);
+                Wind.felledTrees++;
+                Wind.isTreeChopped = true;
                 break;
             case Type.Log:
                 // Spawn FX
@@ -115,6 +121,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
         healthSystem.Damage(amount);
     }
 
+    
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -131,8 +138,8 @@ public class Tree : MonoBehaviour, ITreeDamageable {
 
         if ( treeType == Type.Log || treeType == Type.LogHalf)
         {
-            //foreach (ContactPoint contact in collision.contacts)
-            //{
+            foreach (ContactPoint contact in collision.contacts)
+            {
                 if (gameObject.GetComponent<Rigidbody>().velocity.magnitude > 0.1f)
                 {
                     if(collision.gameObject.CompareTag("Ground"))
@@ -146,7 +153,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
 
 
                 }
-            //}
+            }
 
         }
 

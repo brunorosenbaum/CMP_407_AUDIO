@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a394ec806c707b6429f714f3aa04931c, type: 3}
+  m_Name: BBB2C63D-7087-4E37-B272-662607280622
+  m_EditorClassIdentifier: 
+  objectName: IncreaseWind
+  id: 733948675
+  guid: BBB2C63D-7087-4E37-B272-662607280622

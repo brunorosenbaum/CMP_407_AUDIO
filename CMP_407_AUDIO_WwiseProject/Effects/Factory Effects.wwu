@@ -1397,11 +1397,10 @@
 							<ChildrenList>
 								<Effect Name="Machine_Gun_Hangar" ID="{B8FD966C-FC0F-4CD3-8236-B28DF27CDE7D}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
-										<Property Name="DecayTime" Type="Real32" Value="4.6"/>
-										<Property Name="Density" Type="Real32" Value="100"/>
-										<Property Name="Diffusion" Type="Real32" Value="53"/>
+										<Property Name="DecayTime" Type="Real32" Value="4.4"/>
+										<Property Name="Density" Type="Real32" Value="10"/>
+										<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
 										<Property Name="ERLevel" Type="Real32" Value="-15"/>
-										<Property Name="ERPattern" Type="int32" Value="30"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="490"/>
 										<Property Name="Filter1Gain" Type="Real32" Value="-4.5"/>
 										<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
@@ -1409,9 +1408,9 @@
 										<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
 										<Property Name="Filter3Gain" Type="Real32" Value="1"/>
 										<Property Name="HFDamping" Type="Real32" Value="5.3"/>
-										<Property Name="PreDelay" Type="Real32" Value="80"/>
+										<Property Name="PreDelay" Type="Real32" Value="103"/>
 										<Property Name="Quality" Type="int32" Value="6"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-19"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-18"/>
 										<Property Name="RoomSize" Type="Real32" Value="100"/>
 									</PropertyList>
 								</Effect>

@@ -180,6 +180,36 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlayWind" ID="{774EE338-C34E-453E-9B18-4FFC3D651E82}">
+					<ChildrenList>
+						<Action Name="" ID="{D7AD7FF6-174C-48BC-850E-370C892F1462}" ShortID="819356446">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="wind" ID="{6D410DBD-639E-4B5C-B0DA-9252BAF488D2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="IncreaseWind" ID="{D9C37FC8-E418-4066-A678-CE207BD6F922}">
+					<ChildrenList>
+						<Action Name="" ID="{58D3B9BE-3F98-4678-B685-1F23CF35BBB9}" ShortID="664971093">
+							<PropertyList>
+								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="11"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="wind" ID="{6D410DBD-639E-4B5C-B0DA-9252BAF488D2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

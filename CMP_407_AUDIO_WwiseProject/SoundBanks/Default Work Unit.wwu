@@ -8,6 +8,7 @@
 						<ObjectRef Name="TreesHit" ID="{0DDD1CDB-2218-402B-946F-14E27DA926D2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="LogRockCollision" ID="{DE440B4A-3BAF-4054-828A-ABA0DC7CD62F}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="logRockHit" ID="{551CF43F-E8B7-4056-89F5-B2FC43628B3C}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="IncreaseWind" ID="{D9C37FC8-E418-4066-A678-CE207BD6F922}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="logRockHit2" ID="{EB9578A8-B3C3-407D-BBCD-66C4B4F03A60}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="treesHit2" ID="{4434EB5E-AE3F-4081-8035-57E11A812DC3}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fall" ID="{EDEDE40D-B5F5-40A2-88C0-1320DA5CA9A6}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
@@ -27,6 +28,7 @@
 						<ObjectRef Name="Grass" ID="{7D0E2E83-8CFC-43CA-84B9-A267AB08714F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BirdVolume" ID="{2CAFD842-8345-43D2-8280-ED7BFFAE7834}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Leaves" ID="{D18AEBE7-B695-4512-9506-8AFA827A74EF}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayWind" ID="{774EE338-C34E-453E-9B18-4FFC3D651E82}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="treeHit3" ID="{24C76DB7-72F9-45D7-8BCA-93FA9D2BCA15}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="crows" ID="{F17E4D0C-E0D1-45E7-B6A5-F35279E90DBC}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WoodChopping" ID="{16386F3D-EE6B-45F7-AE3C-2477574417BA}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
@@ -44,6 +46,7 @@
 						<ObjectRef Name="treeHit4" ID="{0285A658-A31C-4AB1-B73B-C725DFE9368B}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="JumpLand" ID="{5240B325-4FB0-4AD2-ACA6-689124B33BAA}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="birchLeaves" ID="{1E02EFB9-C134-4AFE-AE0E-2A1EB5E9E26C}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="wind" ID="{6D410DBD-639E-4B5C-B0DA-9252BAF488D2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="treesHit1" ID="{78EF26E7-A0F1-4BF2-9596-FA43C53EBEA5}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep" ID="{8AA9D53C-EDC7-4C7C-B975-E20E1E163892}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock1" ID="{93279DD9-F74A-4C90-807D-431744D5BC26}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>

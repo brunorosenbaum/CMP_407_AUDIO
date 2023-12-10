@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{26414872-1209-AB9A-61F7-42C892E08CF0}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{41C39C47-09CA-BC86-C42C-3C92D1118CF5}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -117,6 +117,10 @@
 					<ShortName>rock1.wav</ShortName>
 					<CachePath>SFX/rock1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="985975637" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>wind.wav</ShortName>
+					<CachePath>SFX/wind_05A4D402.wem</CachePath>
+				</File>
 				<File Id="986618742" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>treesHit2.wav</ShortName>
 					<CachePath>SFX/treesHit2_818F3B66.wem</CachePath>
@@ -147,6 +151,7 @@
 					<Plugin Id="688170875" Name="Expander (Custom)" LibName="Wwise Expander" LibId="7143427"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="1203617187" Name="Machine_Gun_Hangar" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" LibName="Wwise Delay" LibId="6946819"/>
 				</ShareSets>
 			</Plugins>
@@ -194,6 +199,16 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="733948675" Name="IncreaseWind" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="985975637"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1203617187"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0.18680137" DurationMax="0.22214551">
 					<MediaRefs>
@@ -306,6 +321,16 @@
 						<MediaRef Id="993206750"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1592727253" Name="PlayWind" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="985975637"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1203617187"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="2144363834" Name="Rock" DurationType="OneShot" DurationMin="0.18350588" DurationMax="0.25580359">
 					<MediaRefs>
 						<MediaRef Id="35374810"/>
@@ -379,6 +404,7 @@
 				</Event>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="733948675" Name="IncreaseWind"/>
 				<GameParameter Id="1240670792" Name="Distance"/>
 			</GameParameters>
 			<SwitchGroups>
@@ -404,7 +430,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8AD14592-2D4B-9BA8-003B-7C7956BA566B}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F33B512C-09DD-0EA1-CB52-C2705A02361E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -429,6 +455,7 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
+				<GameParameter Id="733948675" Name="IncreaseWind"/>
 				<GameParameter Id="1240670792" Name="Distance"/>
 			</GameParameters>
 			<SwitchGroups>
@@ -455,5 +482,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{966482D0-63C4-FAA0-B91D-CCD7A9B49420}</FileHash>
+	<FileHash>{F138C636-6D6D-F749-463B-120D913DFD09}</FileHash>
 </SoundBanksInfo>
