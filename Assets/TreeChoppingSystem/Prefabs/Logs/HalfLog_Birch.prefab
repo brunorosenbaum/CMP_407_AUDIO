@@ -282,9 +282,44 @@ MonoBehaviour:
   treeLog: {fileID: 6544008936531603717, guid: 21047b8bf96486c49b3130d378f98608, type: 3}
   treeLogHalf: {fileID: 2809928136178568926}
   treeStump: {fileID: 3296910486322179457, guid: 0e4f9e55f699e094baf0dd81acdc22fd, type: 3}
+  birds: {fileID: 0}
+  felling:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  fallDown:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  rockLog:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 19bd746a80037a84a837b7d09900a9cf, type: 2}
+  logHit:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 55e6cd1d1eaa9874b9df8d83e43d7724, type: 2}
+  leavesPlaying:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  stopLeaves:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  lowerBirdVolume:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   speciesSwitch:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: fdee1174ba197824e94b67185e7a9876, type: 2}
+  leavesRustling:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}

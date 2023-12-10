@@ -131,18 +131,22 @@ public class Tree : MonoBehaviour, ITreeDamageable {
 
         if ( treeType == Type.Log || treeType == Type.LogHalf)
         {
-            foreach (ContactPoint contact in collision.contacts)
-            {
+            //foreach (ContactPoint contact in collision.contacts)
+            //{
                 if (gameObject.GetComponent<Rigidbody>().velocity.magnitude > 0.1f)
                 {
                     if(collision.gameObject.CompareTag("Ground"))
                         fallDown.Post(gameObject);
                     if (collision.gameObject.CompareTag("Rock"))
-                        rockLog.Post(gameObject); 
+                    {
+                        Debug.Log("LOG HIT ROCK");
+                        rockLog.Post(gameObject);
+
+                    }
 
 
                 }
-            }
+            //}
 
         }
 

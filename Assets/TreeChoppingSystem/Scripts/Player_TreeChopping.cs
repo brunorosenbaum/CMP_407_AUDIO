@@ -184,7 +184,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.collider is CapsuleCollider)
+        if (other.collider is CapsuleCollider && isWalking)
         {
             logCollision.Post(gameObject);
         }
@@ -205,11 +205,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
             logCollision.Post(gameObject); 
         }
 
-        if (other.TryGetComponent<Tree>(out Tree tree))
-        {
-
-            Debug.Log("CODE TRIGGER");
-        }
+        
 
     }
 
