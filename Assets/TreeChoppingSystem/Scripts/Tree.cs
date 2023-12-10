@@ -33,6 +33,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
     public AK.Wwise.Event fallDown; 
     public AK.Wwise.Event rockLog; 
     public AK.Wwise.Event logHit; 
+    public AK.Wwise.Event leavesPlaying; 
     public AK.Wwise.Event stopLeaves; 
     public AK.Wwise.Event lowerBirdVolume; 
 
@@ -55,6 +56,13 @@ public class Tree : MonoBehaviour, ITreeDamageable {
         healthSystem = new HealthSystem(healthAmount);
         healthSystem.OnDead += HealthSystem_OnDead;
         
+    }
+
+    private void Start()
+    {
+        leavesRustling.SetValue(gameObject);
+        leavesPlaying.Post(gameObject); 
+
     }
 
     private void HealthSystem_OnDead(object sender, System.EventArgs e) {
@@ -107,6 +115,7 @@ public class Tree : MonoBehaviour, ITreeDamageable {
         healthSystem.Damage(amount);
     }
 
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.TryGetComponent<ITreeDamageable>(out ITreeDamageable treeDamageable))
@@ -136,7 +145,6 @@ public class Tree : MonoBehaviour, ITreeDamageable {
             }
 
         }
-
 
 
     }

@@ -35,7 +35,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
     public float jumpHeight = 3f;
 
     //Sounds
-    public AK.Wwise.Event footstep = new AK.Wwise.Event();
+    public AK.Wwise.Event footstep;
     public AK.Wwise.Event woodChopping;
     public AK.Wwise.Event jump; 
     public AK.Wwise.Event landing;
@@ -60,16 +60,6 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
         HandleAttack();
         HandleMovement();
         
-        Collider[] colliderArray = Physics.OverlapBox(hitArea.transform.position, Vector3.one * .3f, Quaternion.identity, 0, QueryTriggerInteraction.UseGlobal);
-        foreach (Collider collider in colliderArray)
-        {
-            if (collider.TryGetComponent<Tree>(out Tree tree) /*&& controller.velocity.x > 0*/)
-            {
-              
-                Debug.Log("CODE RUNNING");
-                logCollision.Post(gameObject);
-            }
-        }
 
         if (((Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.0f) ||
              (Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.0f)))
@@ -111,7 +101,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
     private void AnimationEvent_OnHit() {
         // Find objects in Hit Area
-        Vector3 colliderSize = Vector3.one * .3f;
+        Vector3 colliderSize = Vector3.one /** .3f*/;
         Collider[] colliderArray = Physics.OverlapBox(hitArea.transform.position, colliderSize);
         foreach (Collider collider in colliderArray)
         {
@@ -192,46 +182,14 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
     }
 
-    //private void OnTriggerStay(Collider collider)
-    //{
-    //    if (collider.TryGetComponent<ITreeDamageable>(out ITreeDamageable treeDamageable))
-    //    {
-    //        if (Input.GetMouseButtonDown(0))
-    //        {
-    //            Play wood chopping sound
-    //            if (collider.TryGetComponent<Tree>(out Tree tree))
-    //            {
-    //                tree.speciesSwitch.SetValue(gameObject);
-    //                woodChopping.Post(gameObject);
-    //            }
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.collider is CapsuleCollider)
+        {
+            logCollision.Post(gameObject);
+        }
 
-    //            Damage Popup
-    //            int damageAmount = UnityEngine.Random.Range(10, 30);
-    //            DamagePopup.Create(hitArea.transform.position, damageAmount, damageAmount > 14);
-
-    //            Damage Tree
-    //            treeDamageable.Damage(damageAmount);
-
-
-    //            Shake Camera
-    //            treeShake.GenerateImpulse();
-
-
-    //        }
-
-    //        if (collider.TryGetComponent<StumpSound>(out StumpSound stump) && collider == null)
-    //        {
-    //            footstepSwitch.SetValue(gameObject);
-    //        }
-
-    //        if (collider.CompareTag("Rock"))
-    //        {
-
-    //            rockHit.Post(gameObject);
-
-    //        }
-    //    }
-    //}
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -242,39 +200,28 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
         }
 
+        if (other is CapsuleCollider)
+        {
+            logCollision.Post(gameObject); 
+        }
+
+        if (other.TryGetComponent<Tree>(out Tree tree))
+        {
+
+            Debug.Log("CODE TRIGGER");
+        }
 
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        //if (collision.gameObject.TryGetComponent<Tree>(out Tree tree) && controller.velocity.x > 1f)
-        //{
-        //    logCollision.Post(gameObject); 
-        //}
-    }
+  
+
 
     private void OnTriggerExit(Collider other)
     {
         footstepSwitch.SetValue(gameObject);
         
     }
-    //private void SwitchFootsteps()
-    //{
-        
-
-    //    Collider[] colliderArray = //Will return an array of colliders that the player's capsule collider overlaps with
-    //        Physics.OverlapSphere(transform.position, controller.radius);
-    //    foreach (Collider collider in colliderArray) //Loop through them
-    //    {
-    //        if (collider.TryGetComponent<StumpSound>(out StumpSound stump)) 
-    //            stump.soundMaterial.SetValue(gameObject);
-    //        else
-    //            footstepSwitch.SetValue(gameObject);
-
-    //    }
-        
-
-    //}
+   
     public void Damage(int amount) {
         // Damage!
     }
