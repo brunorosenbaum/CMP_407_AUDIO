@@ -77,6 +77,7 @@ namespace AK
         static const AkUniqueID BIRDDISTANCE = 2558896341U;
         static const AkUniqueID DISTANCE = 1240670792U;
         static const AkUniqueID FELLINGDISTANCE = 4102074127U;
+        static const AkUniqueID FELLRADIUS = 522285816U;
         static const AkUniqueID INCREASEWIND = 733948675U;
     } // namespace GAME_PARAMETERS
 

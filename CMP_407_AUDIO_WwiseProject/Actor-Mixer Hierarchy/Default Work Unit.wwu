@@ -1141,88 +1141,6 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
-				<Sound Name="Felling" ID="{607BDBAA-3431-4847-8F95-2D0B87F24197}" ShortID="475310851">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="Pitch" Type="int32">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{25F504AD-88F7-4821-9CCE-8E63C88A0A2F}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="150"/>
-											<Property Name="Min" Type="Real64" Value="-150"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="FellingAttenuation" ID="{52DCBF99-8AD3-404D-821F-1AC54FBA8BB9}" WorkUnitID="{D6AA5150-DDE6-44CA-B334-92A488F4A663}"/>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="felling" ID="{1E208D70-B57C-4BC1-860B-2F244988A70D}">
-							<Language>SFX</Language>
-							<AudioFile>felling.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="628621901"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="RTPC">
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{88CED7B5-AFBF-446F-B98D-F2E71CBFC2D4}" ShortID="263895983">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Volume"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="FellingDistance" ID="{ACC6C295-71EB-4919-A207-664082BB163F}" WorkUnitID="{BD4D0FAA-CA96-48B5-B960-F720E5045184}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{17CC6221-B89C-4A58-9A17-9AB4BDD3DD34}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-0.06656</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp1</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-200</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-					<ActiveSourceList>
-						<ActiveSource Name="felling" ID="{1E208D70-B57C-4BC1-860B-2F244988A70D}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="FallDown" ID="{97D40D56-BB2B-4273-9FD5-F6D230033848}" ShortID="556462098">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -1465,6 +1383,45 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{541D76ED-60FB-4BC1-9A64-3F86F17D592E}" ShortID="159011477">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FellingDistance" ID="{ACC6C295-71EB-4919-A207-664082BB163F}" WorkUnitID="{BD4D0FAA-CA96-48B5-B960-F720E5045184}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{28024880-7CF4-4740-8F8C-75266B74C940}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="fallDown" ID="{44988460-3F47-4054-A1AE-CDE6A3BE3485}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -1956,7 +1913,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="Distance" ID="{11C25C18-11D6-49C8-86AC-82940F0A1BB2}" WorkUnitID="{BD4D0FAA-CA96-48B5-B960-F720E5045184}"/>
+												<ObjectRef Name="FellingDistance" ID="{ACC6C295-71EB-4919-A207-664082BB163F}" WorkUnitID="{BD4D0FAA-CA96-48B5-B960-F720E5045184}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -1967,13 +1924,13 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-200</YPos>
+																<YPos>-0.06866</YPos>
 																<Flags>5</Flags>
 																<SegmentShape>Exp1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>180</XPos>
-																<YPos>0</YPos>
+																<XPos>50</XPos>
+																<YPos>-200</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -2384,6 +2341,170 @@
 						<ActiveSource Name="musicBox" ID="{76625A53-BED6-44FE-94C6-C760A57458F6}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="Felling" ID="{6B8D90DB-E2FE-448B-B4D7-E6DCB7958005}" ShortID="639582909">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{044EBE8D-5965-40DD-9479-C7D2C5FEFA98}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="FellingAttenuation" ID="{52DCBF99-8AD3-404D-821F-1AC54FBA8BB9}" WorkUnitID="{D6AA5150-DDE6-44CA-B334-92A488F4A663}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="fell1" ID="{607BDBAA-3431-4847-8F95-2D0B87F24197}" ShortID="475310851">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{25F504AD-88F7-4821-9CCE-8E63C88A0A2F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="FellingAttenuation" ID="{52DCBF99-8AD3-404D-821F-1AC54FBA8BB9}" WorkUnitID="{D6AA5150-DDE6-44CA-B334-92A488F4A663}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="felling" ID="{1E208D70-B57C-4BC1-860B-2F244988A70D}">
+									<Language>SFX</Language>
+									<AudioFile>felling.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="628621901"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="felling" ID="{1E208D70-B57C-4BC1-860B-2F244988A70D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="treeFell2" ID="{6DDAD96F-20B8-4054-BBA4-2BA294043793}" ShortID="750586890">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="treeFell2" ID="{F109BFC0-61F2-4D9C-8115-4AB27CA70BC0}">
+									<Language>SFX</Language>
+									<AudioFile>treeFell2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="744664113"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="treeFell2" ID="{F109BFC0-61F2-4D9C-8115-4AB27CA70BC0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="treeFell3" ID="{7CC5D69E-2C8A-4306-BDC1-5A14F8FC3416}" ShortID="73714449">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{43EA130A-4F77-413F-9BA2-D274334F2D39}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="treeFell3" ID="{859AD34D-A440-41B8-9F06-1FC4E34099C3}">
+									<Language>SFX</Language>
+									<AudioFile>treeFell3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="927731002"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="treeFell3" ID="{859AD34D-A440-41B8-9F06-1FC4E34099C3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{3C9280A4-F1C0-40CC-A273-40FA28A1EAAA}" ShortID="771876424">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FellingDistance" ID="{ACC6C295-71EB-4919-A207-664082BB163F}" WorkUnitID="{BD4D0FAA-CA96-48B5-B960-F720E5045184}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{FE86834A-567C-497B-B5EB-91453EA6D974}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0.0665600000000097</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

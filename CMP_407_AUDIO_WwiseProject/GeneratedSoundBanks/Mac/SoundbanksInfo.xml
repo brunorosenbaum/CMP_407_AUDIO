@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{BB8896EF-10B4-2539-4120-FD70DA7B562C}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{F76844C6-4743-7D6F-1B7C-27418B76E949}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -97,6 +97,10 @@
 					<ShortName>elmLeaves.wav</ShortName>
 					<CachePath>SFX/elmLeaves_806A9D1A.wem</CachePath>
 				</File>
+				<File Id="744664113" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>treeFell2.wav</ShortName>
+					<CachePath>SFX/treeFell2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="763772957" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>campfire.wav</ShortName>
 					<CachePath>SFX/campfire_806A9D1A.wem</CachePath>
@@ -108,6 +112,10 @@
 				<File Id="923576847" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>treeHit3.wav</ShortName>
 					<CachePath>SFX/treeHit3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="927731002" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>treeFell3.wav</ShortName>
+					<CachePath>SFX/treeFell3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="950933815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>treesHit1.wav</ShortName>
@@ -369,9 +377,11 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1724430086" Name="TreeFelling" MaxAttenuation="100" DurationType="OneShot" DurationMin="4.109592" DurationMax="4.887156">
+				<Event Id="1724430086" Name="TreeFelling" MaxAttenuation="100" DurationType="OneShot" DurationMin="2.1765606" DurationMax="5.485647">
 					<MediaRefs>
 						<MediaRef Id="628621901"/>
+						<MediaRef Id="744664113"/>
+						<MediaRef Id="927731002"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1990903982" Name="Woodchopping" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5056667">
@@ -398,6 +408,7 @@
 				</Event>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="522285816" Name="FellRadius"/>
 				<GameParameter Id="733948675" Name="IncreaseWind"/>
 				<GameParameter Id="1240670792" Name="Distance"/>
 				<GameParameter Id="2558896341" Name="BirdDistance"/>
@@ -426,7 +437,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F0159EF0-5C73-541B-68F3-13F487BEEFDA}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A72876FA-2FDF-AB4B-A4E1-40D9F950D38B}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -451,6 +462,7 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
+				<GameParameter Id="522285816" Name="FellRadius"/>
 				<GameParameter Id="733948675" Name="IncreaseWind"/>
 				<GameParameter Id="1240670792" Name="Distance"/>
 				<GameParameter Id="2558896341" Name="BirdDistance"/>
@@ -480,5 +492,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BA2B71D8-8D3C-F98C-6054-964371161FF6}</FileHash>
+	<FileHash>{665B7D40-8ACA-14F3-464A-200C5F9D76F9}</FileHash>
 </SoundBanksInfo>

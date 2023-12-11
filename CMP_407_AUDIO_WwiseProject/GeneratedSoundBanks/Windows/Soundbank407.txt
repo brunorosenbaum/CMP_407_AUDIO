@@ -34,6 +34,7 @@ Switch	ID	Name	Switch Group			Notes
 	4248645337	Grass	Footsteps			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	522285816	FellRadius			\Default Work Unit\FellRadius	
 	733948675	IncreaseWind			\Default Work Unit\IncreaseWind	
 	1240670792	Distance			\Default Work Unit\Distance	
 	2558896341	BirdDistance			\Default Work Unit\BirdDistance	
@@ -63,13 +64,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	563835414	logRockHit	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\logRockHit_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\LogHitRock\logRockHit		96816
 	592123486	footstep_2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\footstep_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\footstep_2		86600
 	597575265	tree1Chop	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\tree1Chop_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\WoodChopping\Birch\tree1Chop		96096
-	628621901	Felling	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\felling_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Felling		430324
+	628621901	fell1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\felling_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Felling\fell1		430324
 	651362762	logRockHit2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\logRockHit2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\LogHitRock\logRockHit2		71132
 	657202072	musicBox	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\musicBox_56CEF360.wem		\Actor-Mixer Hierarchy\Default Work Unit\musicBox		420033
 	704944141	elmLeaves	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\elmLeaves_806A9D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leaves\elmLeaves		546144
+	744664113	treeFell2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\treeFell2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Felling\treeFell2		431060
 	763772957	campfire	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\campfire_806A9D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\campfire		1868856
 	849490016	pineLeaves	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\pineLeaves_806A9D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leaves\pineLeaves		546144
 	923576847	treeHit3	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\treeHit3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TreesHit\treeHit3		48016
+	927731002	treeFell3	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\treeFell3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Felling\treeFell3		453088
 	950933815	treesHit1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\treesHit1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TreesHit\treesHit1		77388
 	951310688	rock1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\rock1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\RockHit\rock1		38604
 	985975637	wind	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\wind_05A4D402.wem		\Actor-Mixer Hierarchy\Default Work Unit\wind		29685

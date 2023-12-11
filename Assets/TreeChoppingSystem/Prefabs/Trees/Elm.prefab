@@ -450,7 +450,6 @@ MonoBehaviour:
   treeLog: {fileID: 6544008936531603717, guid: 6b08130cd86fe6a47be82062b22f7259, type: 3}
   treeLogHalf: {fileID: 2809928136178568926, guid: 4a0c012d5f99ab4408b158ad9900f7f8, type: 3}
   treeStump: {fileID: 8372748528969190668, guid: b83d717870547cc4282774f0bb349a9c, type: 3}
-  wind: {fileID: 7049544141027909550, guid: 4ee43169e7716744ea8591c296b655ce, type: 3}
   birds: {fileID: 4967280217493892376, guid: aec8cc3cc9d1edc4da2c0e032d0fa501, type: 3}
   felling:
     idInternal: 0

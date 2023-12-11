@@ -82,10 +82,10 @@
 				</Event>
 				<Event Name="TreeFelling" ID="{F850817B-683E-479C-9043-BDC9B8E1BDFA}">
 					<ChildrenList>
-						<Action Name="" ID="{C57D4DE6-5DD5-457E-89C4-3B0F3D4B9B64}" ShortID="125229692">
+						<Action Name="" ID="{22329C93-4E71-40D2-AE1D-DC2A9A2AC131}" ShortID="1049149526">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Felling" ID="{607BDBAA-3431-4847-8F95-2D0B87F24197}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+									<ObjectRef Name="Felling" ID="{6B8D90DB-E2FE-448B-B4D7-E6DCB7958005}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
