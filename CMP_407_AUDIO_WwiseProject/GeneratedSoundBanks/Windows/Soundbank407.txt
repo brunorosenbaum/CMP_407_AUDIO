@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	674522502	Land			\Default Work Unit\Land	
 	733948675	IncreaseWind			\Default Work Unit\IncreaseWind	
 	1592727253	PlayWind			\Default Work Unit\PlayWind	
+	1592808679	BGMPlay			\Default Work Unit\BGMPlay	
 	1701802898	BirdVolume			\Default Work Unit\BirdVolume	
 	1724430086	TreeFelling			\Default Work Unit\TreeFelling	
 	1866025847	Footstep			\Default Work Unit\Footstep	
@@ -35,11 +36,14 @@ Switch	ID	Name	Switch Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	733948675	IncreaseWind			\Default Work Unit\IncreaseWind	
 	1240670792	Distance			\Default Work Unit\Distance	
+	2558896341	BirdDistance			\Default Work Unit\BirdDistance	
+	4102074127	FellingDistance			\Default Work Unit\FellingDistance	
 
 Effect plug-ins	ID	Name	Type				Notes
 	688170875	Expander (Custom)	Wwise Expander			
 	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
 	2180422931	One_Tap_Quarter_Second	Wwise Delay			
+	2952825346	Dual_Filters_Radio_Comm	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20979341	bump1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\bump1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bumping\bump1		35484
@@ -61,10 +65,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	597575265	tree1Chop	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\tree1Chop_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\WoodChopping\Birch\tree1Chop		96096
 	628621901	Felling	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\felling_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Felling		430324
 	651362762	logRockHit2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\logRockHit2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\LogHitRock\logRockHit2		71132
+	657202072	musicBox	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\musicBox_56CEF360.wem		\Actor-Mixer Hierarchy\Default Work Unit\musicBox		420033
 	704944141	elmLeaves	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\elmLeaves_806A9D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leaves\elmLeaves		546144
 	763772957	campfire	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\campfire_806A9D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\campfire		1868856
 	849490016	pineLeaves	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\pineLeaves_806A9D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leaves\pineLeaves		546144
-	897192023	jump	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\jump_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\JumpLand\jump		39208
 	923576847	treeHit3	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\treeHit3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TreesHit\treeHit3		48016
 	950933815	treesHit1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\treesHit1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TreesHit\treesHit1		77388
 	951310688	rock1	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\rock1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\RockHit\rock1		38604
@@ -74,5 +78,4 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1006074681	FallDown	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\fallDown_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FallDown		192914
 	1028259297	twigs2	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\twigs2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Twigs\twigs2		67636
 	1028684433	birchLeaves	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\birchLeaves_806A9D1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leaves\birchLeaves		542472
-	1042804794	landing	C:\Users\Bruno\Documents\ABERTAY\YEAR 4\CMP407 - AUDIO\407_Audio\CMP_407_AUDIO\CMP_407_AUDIO_WwiseProject\.cache\Windows\SFX\landing_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\JumpLand\landing		55044
 

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{41C39C47-09CA-BC86-C42C-3C92D1118CF5}">
+		<SoundBank Id="1033704419" Type="User" Language="SFX" Hash="{AB38BAC6-8A8C-9F48-A7EC-778F132436C1}">
 			<ShortName>Soundbank407</ShortName>
 			<Path>Soundbank407.bnk</Path>
 			<Media>
@@ -89,6 +89,10 @@
 					<ShortName>logRockHit2.wav</ShortName>
 					<CachePath>SFX/logRockHit2_818F3B66.wem</CachePath>
 				</File>
+				<File Id="657202072" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>musicBox.wav</ShortName>
+					<CachePath>SFX/musicBox_56CEF360.wem</CachePath>
+				</File>
 				<File Id="704944141" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>elmLeaves.wav</ShortName>
 					<CachePath>SFX/elmLeaves_806A9D1A.wem</CachePath>
@@ -100,10 +104,6 @@
 				<File Id="849490016" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>pineLeaves.wav</ShortName>
 					<CachePath>SFX/pineLeaves_806A9D1A.wem</CachePath>
-				</File>
-				<File Id="897192023" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>jump.wav</ShortName>
-					<CachePath>SFX/jump_818F3B66.wem</CachePath>
 				</File>
 				<File Id="923576847" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>treeHit3.wav</ShortName>
@@ -141,10 +141,6 @@
 					<ShortName>birchLeaves.wav</ShortName>
 					<CachePath>SFX/birchLeaves_806A9D1A.wem</CachePath>
 				</File>
-				<File Id="1042804794" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>landing.wav</ShortName>
-					<CachePath>SFX/landing_818F3B66.wem</CachePath>
-				</File>
 			</Media>
 			<Plugins>
 				<Custom>
@@ -153,9 +149,20 @@
 				<ShareSets>
 					<Plugin Id="1203617187" Name="Machine_Gun_Hangar" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" LibName="Wwise Delay" LibId="6946819"/>
+					<Plugin Id="2952825346" Name="Dual_Filters_Radio_Comm" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
+				<Event Id="1592808679" Name="BGMPlay" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="657202072"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2952825346"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="1701802898" Name="BirdVolume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
 						<MediaRef Id="328161329"/>
@@ -210,21 +217,8 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0.18680137" DurationMax="0.22214551">
-					<MediaRefs>
-						<MediaRef Id="897192023"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="674522502" Name="Land" DurationType="OneShot" DurationMin="0.2624351" DurationMax="0.31208968">
-					<MediaRefs>
-						<MediaRef Id="1042804794"/>
-					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="2180422931"/>
-						</ShareSets>
-					</PluginRefs>
-				</Event>
+				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0.18680137" DurationMax="0.22214551"/>
+				<Event Id="674522502" Name="Land" DurationType="OneShot" DurationMin="0.2624351" DurationMax="0.31208968"/>
 				<Event Id="582824249" Name="Leaves" MaxAttenuation="100" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -406,6 +400,8 @@
 			<GameParameters>
 				<GameParameter Id="733948675" Name="IncreaseWind"/>
 				<GameParameter Id="1240670792" Name="Distance"/>
+				<GameParameter Id="2558896341" Name="BirdDistance"/>
+				<GameParameter Id="4102074127" Name="FellingDistance"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="582824249" Name="Leaves">
@@ -430,7 +426,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F33B512C-09DD-0EA1-CB52-C2705A02361E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{90C3AFED-4C48-3E3F-0F30-B3DA799C0261}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -457,6 +453,8 @@
 			<GameParameters>
 				<GameParameter Id="733948675" Name="IncreaseWind"/>
 				<GameParameter Id="1240670792" Name="Distance"/>
+				<GameParameter Id="2558896341" Name="BirdDistance"/>
+				<GameParameter Id="4102074127" Name="FellingDistance"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="582824249" Name="Leaves">
@@ -482,5 +480,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F138C636-6D6D-F749-463B-120D913DFD09}</FileHash>
+	<FileHash>{CE21C8CE-52B1-BDB2-EBA9-406751337AFC}</FileHash>
 </SoundBanksInfo>

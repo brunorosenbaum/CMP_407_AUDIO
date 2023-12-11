@@ -6,21 +6,21 @@ using UnityEngine;
 
 public class Wind : MonoBehaviour
 {
-    public static GameObject windRef { get; private set; }
+    //public static GameObject windRef { get; private set; }
     public static int felledTrees;
-     public static bool isTreeChopped; 
-
+    public static bool isTreeChopped; 
     
     //Sounds
     public AK.Wwise.Event playWind;
     public AK.Wwise.Event increaseWind;
     public AK.Wwise.RTPC windIntensity; 
-    int temp = 0;
+    
+    
    
     private void Awake()
     {
         isTreeChopped = false;
-        windRef = this.gameObject;
+        //windRef = this.gameObject;
     }
 
    
@@ -37,17 +37,20 @@ public class Wind : MonoBehaviour
     void Update()
     {
         
-        if (felledTrees > 3)
+        if (felledTrees > 10)
         { //When enough trees are cut down, volume of the wind starts rising
             if (isTreeChopped)
             {
                 //Debug.Log("Tree increase");
-                temp++; 
-                windIntensity.SetValue(gameObject, temp);
+                //temp++; 
+                windIntensity.SetValue(gameObject, 0.5f);
                 increaseWind.Post(gameObject);
                 isTreeChopped = false; 
+               
             }
+          
         }
+       
 
     }
 

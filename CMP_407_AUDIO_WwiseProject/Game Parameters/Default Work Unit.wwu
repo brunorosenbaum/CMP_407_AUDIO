@@ -6,14 +6,29 @@
 				<GameParameter Name="Distance" ID="{11C25C18-11D6-49C8-86AC-82940F0A1BB2}">
 					<PropertyList>
 						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="Color" Type="int16" Value="10"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="50"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="IncreaseWind" ID="{BBB2C63D-7087-4E37-B272-662607280622}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FellingDistance" ID="{ACC6C295-71EB-4919-A207-664082BB163F}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BirdDistance" ID="{7A8C2917-3F39-47C6-9543-6387B017BCF7}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="50"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

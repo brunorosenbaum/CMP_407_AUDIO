@@ -19,6 +19,7 @@
 						<ObjectRef Name="Birds" ID="{D3F8D6EB-B495-41D8-A7BF-6159A55E59A2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="campfire" ID="{F3C5BF02-7A7E-41E2-9983-D1285FB4059F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="elmLeaves" ID="{A5EF6951-5CF6-41F8-B863-F0C39E8D8C0F}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="musicBox" ID="{CFA600DD-B485-4221-9343-BA373B6D0843}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FallDown" ID="{97D40D56-BB2B-4273-9FD5-F6D230033848}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Leaves" ID="{AB64B294-FEC0-428A-977E-690955265511}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{AB7E282F-692D-42FA-9AFF-02581C582541}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
@@ -46,6 +47,7 @@
 						<ObjectRef Name="treeHit4" ID="{0285A658-A31C-4AB1-B73B-C725DFE9368B}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="JumpLand" ID="{5240B325-4FB0-4AD2-ACA6-689124B33BAA}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="birchLeaves" ID="{1E02EFB9-C134-4AFE-AE0E-2A1EB5E9E26C}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BGMPlay" ID="{68D3F7A3-F2AB-4B2E-A017-CDD2C81DAEC7}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="wind" ID="{6D410DBD-639E-4B5C-B0DA-9252BAF488D2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="treesHit1" ID="{78EF26E7-A0F1-4BF2-9596-FA43C53EBEA5}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep" ID="{8AA9D53C-EDC7-4C7C-B975-E20E1E163892}" WorkUnitID="{B1E12688-134E-4D43-A5CD-F4E90DB0EE93}" Origin="Manual" Filter="7"/>

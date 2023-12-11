@@ -193,6 +193,13 @@
 					</GroupingInfo>
 				</SwitchContainer>
 				<Folder Name="JumpLand" ID="{5240B325-4FB0-4AD2-ACA6-689124B33BAA}" ShortID="399899626">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ChildrenList>
 						<Sound Name="jump" ID="{FD4E5F9E-65D1-477A-81D7-A4A20A83213F}" ShortID="968704873">
 							<PropertyList>
@@ -823,7 +830,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-15</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1081,13 +1088,13 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-200</YPos>
+																<YPos>-4.28362</YPos>
 																<Flags>5</Flags>
 																<SegmentShape>Exp1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>50</XPos>
-																<YPos>0</YPos>
+																<XPos>180</XPos>
+																<YPos>-200</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1172,6 +1179,46 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{88CED7B5-AFBF-446F-B98D-F2E71CBFC2D4}" ShortID="263895983">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FellingDistance" ID="{ACC6C295-71EB-4919-A207-664082BB163F}" WorkUnitID="{BD4D0FAA-CA96-48B5-B960-F720E5045184}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{17CC6221-B89C-4A58-9A17-9AB4BDD3DD34}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0.06656</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="felling" ID="{1E208D70-B57C-4BC1-860B-2F244988A70D}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -1618,7 +1665,7 @@
 																<SegmentShape>Exp1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>50</XPos>
+																<XPos>180</XPos>
 																<YPos>1.86234</YPos>
 																<Flags>37</Flags>
 															</Point>
@@ -1639,7 +1686,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="Distance" ID="{11C25C18-11D6-49C8-86AC-82940F0A1BB2}" WorkUnitID="{BD4D0FAA-CA96-48B5-B960-F720E5045184}"/>
+									<ObjectRef Name="BirdDistance" ID="{7A8C2917-3F39-47C6-9543-6387B017BCF7}" WorkUnitID="{BD4D0FAA-CA96-48B5-B960-F720E5045184}"/>
 								</Reference>
 							</ReferenceList>
 							<BlendTrackAssocList>
@@ -1899,6 +1946,46 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{03A5491C-3355-4CEE-A398-2C613DB6D007}" ShortID="170713046">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Distance" ID="{11C25C18-11D6-49C8-86AC-82940F0A1BB2}" WorkUnitID="{BD4D0FAA-CA96-48B5-B960-F720E5045184}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{4B747305-09A1-4FDF-9DB7-4CE919494282}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>180</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="LogHitRock" ID="{C217EF92-0A8B-480D-AC26-6FBA01D7F5E5}" ShortID="407485196">
 					<PropertyList>
@@ -2011,6 +2098,44 @@
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{6621384B-D381-4013-9B53-81104DB083D5}" ShortID="399011304">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Distance" ID="{11C25C18-11D6-49C8-86AC-82940F0A1BB2}" WorkUnitID="{BD4D0FAA-CA96-48B5-B960-F720E5045184}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{D257C857-AFE2-4669-B23F-6F3F5D3866C5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>180</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
 								</Local>
 							</Reference>
 						</ObjectList>
@@ -2217,6 +2342,46 @@
 					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="wind" ID="{FA863966-5A0D-4F4F-BA48-C0B939F060F5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="musicBox" ID="{CFA600DD-B485-4221-9343-BA373B6D0843}" ShortID="775058887">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2E2553E-34B1-4AD5-9627-8410134D01CC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="musicBox" ID="{76625A53-BED6-44FE-94C6-C760A57458F6}">
+							<Language>SFX</Language>
+							<AudioFile>musicBox.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="657202072"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{B7FAE216-DAF7-403F-A552-5EEB026D1773}" ShortID="396768073">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="Dual_Filters_Radio_Comm" ID="{69479ACD-2C87-4007-B83E-55210A3B36B7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="musicBox" ID="{76625A53-BED6-44FE-94C6-C760A57458F6}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

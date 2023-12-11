@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BGMPLAY = 1592808679U;
         static const AkUniqueID BIRDVOLUME = 1701802898U;
         static const AkUniqueID BUMPING = 643598423U;
         static const AkUniqueID CAMPFIRE = 1931646578U;
@@ -73,7 +74,9 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BIRDDISTANCE = 2558896341U;
         static const AkUniqueID DISTANCE = 1240670792U;
+        static const AkUniqueID FELLINGDISTANCE = 4102074127U;
         static const AkUniqueID INCREASEWIND = 733948675U;
     } // namespace GAME_PARAMETERS
 

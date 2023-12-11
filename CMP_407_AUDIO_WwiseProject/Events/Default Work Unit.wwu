@@ -200,11 +200,40 @@
 								<Property Name="Delay" Type="Real64" Value="0.5"/>
 								<Property Name="FadeInCurve" Type="int16" Value="6"/>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
-								<Property Name="Volume" Type="Real64" Value="11"/>
+								<Property Name="Volume" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="wind" ID="{6D410DBD-639E-4B5C-B0DA-9252BAF488D2}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BGMPlay" ID="{68D3F7A3-F2AB-4B2E-A017-CDD2C81DAEC7}">
+					<ChildrenList>
+						<Action Name="" ID="{A2750DF2-9D4E-4FF7-B121-438C768FF567}" ShortID="896939562">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="musicBox" ID="{CFA600DD-B485-4221-9343-BA373B6D0843}" WorkUnitID="{F847F5F2-ADD3-41B2-B09B-2E31E17548A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Trigger_New_Trigger" ID="{B0B43E15-5514-4C3F-91FD-433186CF2792}">
+					<ChildrenList>
+						<Action Name="" ID="{1EFD500E-5C38-49C6-B562-A747DD3C099C}" ShortID="541457417">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="New_Trigger" ID="{464BB6B6-030C-4EA3-853B-2EE5674C6986}" WorkUnitID="{AB321500-F116-48E9-B851-FB317EF71831}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

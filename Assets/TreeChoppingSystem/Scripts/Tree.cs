@@ -146,7 +146,6 @@ public class Tree : MonoBehaviour, ITreeDamageable {
                         fallDown.Post(gameObject);
                     if (collision.gameObject.CompareTag("Rock"))
                     {
-                        Debug.Log("LOG HIT ROCK");
                         rockLog.Post(gameObject);
 
                     }
