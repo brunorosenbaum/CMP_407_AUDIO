@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7cee44ceb3472d4c882ea4fb97568433
     GuidInternal: 
-    m_lastTime: -8584994420325314770
+    m_lastTime: -8584992601267063198
     List:
     - name: Soundbank407
       guid: e3fb2f3a317a674bbd08e44ed1b832bc
@@ -111,8 +111,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8826e1b14e13434da5cdf4e90db0ee93
     GuidInternal: 
-    m_lastTime: -8584994420325085975
+    m_lastTime: -8584992601266833097
     List:
+    - name: BGMPlay
+      guid: a3f7d368abf22e4ba017cdd2c81daec7
+      id: 1592808679
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: BGMPlay
+        ObjectType: 3
+        guid: a3f7d368abf22e4ba017cdd2c81daec7
+      Path: Events\Default Work Unit\BGMPlay
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: BirdVolume
       guid: 42d8af2c4583d2438280ed7bffae7834
       id: 1701802898
@@ -178,7 +195,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0de4ededf5b5a24088c01320da5ca9a6
       Path: Events\Default Work Unit\Fall
-      maxAttenuation: 30
+      maxAttenuation: 100
       maxDuration: 2.2545002
       minDuration: 1.789398
     - name: Footstep
@@ -198,6 +215,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.5210641
       minDuration: 0.31340146
+    - name: IncreaseWind
+      guid: c87fc3d918e46640a678ce207bd6f922
+      id: 733948675
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: IncreaseWind
+        ObjectType: 3
+        guid: c87fc3d918e46640a678ce207bd6f922
+      Path: Events\Default Work Unit\IncreaseWind
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Jump
       guid: 2f287eab2d69fa429aff02581c582541
       id: 3833651337
@@ -263,7 +297,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d0a3b295fa7ce140968a4ca635cfdf60
       Path: Events\Default Work Unit\LogCollision
-      maxAttenuation: 100
+      maxAttenuation: 50
       maxDuration: 0.56029564
       minDuration: 0.08363312
     - name: LogRockCollision
@@ -280,7 +314,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4a0b44deaf3b5440828aaba0dc7cd62f
       Path: Events\Default Work Unit\LogRockCollision
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: 0.5654403
       minDuration: 0.32961395
     - name: PlayBird
@@ -298,6 +332,23 @@ MonoBehaviour:
         guid: 95f0c52bf5c09547aaf19da22f78da0a
       Path: Events\Default Work Unit\PlayBird
       maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayWind
+      guid: 38e34e774ec33e459b184ffc3d651e82
+      id: 1592727253
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: PlayWind
+        ObjectType: 3
+        guid: 38e34e774ec33e459b184ffc3d651e82
+      Path: Events\Default Work Unit\PlayWind
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Rock
@@ -349,8 +400,25 @@ MonoBehaviour:
         guid: 7b8150f83e689c479043bdc9b8e1bdfa
       Path: Events\Default Work Unit\TreeFelling
       maxAttenuation: 100
-      maxDuration: 4.887156
-      minDuration: 4.109592
+      maxDuration: 5.485647
+      minDuration: 2.1765606
+    - name: Trigger_New_Trigger
+      guid: 153eb4b014553f4c91fd433186cf2792
+      id: 689600765
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8826e1b14e13434da5cdf4e90db0ee93
+      - ElementName: Trigger_New_Trigger
+        ObjectType: 3
+        guid: 153eb4b014553f4c91fd433186cf2792
+      Path: Events\Default Work Unit\Trigger_New_Trigger
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Woodchopping
       guid: 651f97574d32914db4a596d4b5cc98e5
       id: 1990903982
@@ -380,8 +448,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: aa0f4dbd96cab548b960f720e5045184
     GuidInternal: 
-    m_lastTime: -8584994546182106288
+    m_lastTime: -8584992800978123960
     List:
+    - name: BirdDistance
+      guid: 17298c7a393fc64795436387b017bcf7
+      id: 2558896341
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: aa0f4dbd96cab548b960f720e5045184
+      - ElementName: BirdDistance
+        ObjectType: 13
+        guid: 17298c7a393fc64795436387b017bcf7
+      Path: Game Parameters\Default Work Unit\BirdDistance
     - name: Distance
       guid: 185cc211d611c84986ac82940f0a1bb2
       id: 1240670792
@@ -396,6 +478,48 @@ MonoBehaviour:
         ObjectType: 13
         guid: 185cc211d611c84986ac82940f0a1bb2
       Path: Game Parameters\Default Work Unit\Distance
+    - name: FellingDistance
+      guid: 95c2c6aceb711949a207664082bb163f
+      id: 4102074127
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: aa0f4dbd96cab548b960f720e5045184
+      - ElementName: FellingDistance
+        ObjectType: 13
+        guid: 95c2c6aceb711949a207664082bb163f
+      Path: Game Parameters\Default Work Unit\FellingDistance
+    - name: FellRadius
+      guid: 3ad613d5a1198843b3612961ee246cbb
+      id: 522285816
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: aa0f4dbd96cab548b960f720e5045184
+      - ElementName: FellRadius
+        ObjectType: 13
+        guid: 3ad613d5a1198843b3612961ee246cbb
+      Path: Game Parameters\Default Work Unit\FellRadius
+    - name: IncreaseWind
+      guid: 3dc6b2bb8770374eb272662607280622
+      id: 733948675
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: aa0f4dbd96cab548b960f720e5045184
+      - ElementName: IncreaseWind
+        ObjectType: 13
+        guid: 3dc6b2bb8770374eb272662607280622
+      Path: Game Parameters\Default Work Unit\IncreaseWind
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -408,7 +532,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 5ed3fa6717479f44b4c015e6199d0029
     GuidInternal: 
-    m_lastTime: -8585003227770497117
+    m_lastTime: -8584993513098849789
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -618,10 +742,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 001532ab16f1e948b851fb317ef71831
     GuidInternal: 
-    m_lastTime: -8585003227769536901
+    m_lastTime: -8584993513098502057
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000003000000040000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000190000001a0000001c0000001d0000001f0000003700000038000000400000004100000047000000480000004900000054000000550000005d0000005e00000066000000670000009700000098000000ce000000cf000000d0000000
+  ExpandedWaapiItemIds: 0200000003000000040000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000190000001a0000001c0000001d0000001f0000002700000028000000370000003800000040000000410000004700000048000000490000004a0000004b00000054000000550000005d0000005e00000066000000670000009700000098000000ce000000cf000000d0000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
