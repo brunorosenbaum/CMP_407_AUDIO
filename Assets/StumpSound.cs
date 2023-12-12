@@ -26,9 +26,5 @@ public class StumpSound : MonoBehaviour
 
    }
 
-   //private void OnDestroy()
-   //{
-   //    soundMaterial = destroyMtl;
-       
-   //}
+  
 }

@@ -1100,7 +1100,7 @@
 				</SwitchContainer>
 				<Sound Name="FallDown" ID="{97D40D56-BB2B-4273-9FD5-F6D230033848}" ShortID="556462098">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Highpass" Type="int16">
 							<ModifierList>
 								<ModifierInfo>
@@ -1143,21 +1143,12 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{52DCBF99-8AD3-404D-821F-1AC54FBA8BB9}">
-								<Attenuation Name="FellingAttenuation (Custom)" ID="{87476F59-6BBD-4D5D-B413-896CE78801E6}" ShortID="659388319">
-									<PropertyList>
-										<Property Name="ConeInnerAngle" Type="int32" Value="140"/>
-										<Property Name="ConeOuterAngle" Type="int32" Value="305"/>
-										<Property Name="ConeUse" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{4A59BE56-168F-41D7-938C-A26E268FB8FE}" ShortID="47218857">
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{29D36DBF-4F3F-4570-9D9A-434778572908}">
+												<Curve Name="VolumeDry" ID="{F6723856-0ED8-4AE1-8650-50DC24FA82B0}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -1190,46 +1181,10 @@
 											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 										</HighPassFilterUsage>
 										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None">
-												<Curve Name="Spread" ID="{E9BAA13C-5671-4856-B700-C0863DD1A852}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="1"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>100</YPos>
-															<Flags>5</Flags>
-														</Point>
-														<Point>
-															<XPos>100</XPos>
-															<YPos>0</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 										</SpreadUsage>
 										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None">
-												<Curve Name="Focus" ID="{8CD2EC02-B836-472C-AB70-9093FA3B956F}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="1"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>100</YPos>
-															<Flags>5</Flags>
-														</Point>
-														<Point>
-															<XPos>100</XPos>
-															<YPos>0</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 										</FocusUsage>
 										<ObstructionVolumeUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>

@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using UnityEngine;
 using Cinemachine;
-using CodeMonkey.Utils;
-using CodeMonkey;
-using Microsoft.Cci;
+//using CodeMonkey.Utils;
+//using CodeMonkey;
+//using Microsoft.Cci;
 using Unity.VisualScripting;
 using UnityEngine.Serialization;
 
@@ -107,7 +107,7 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
         {
             if (collider.TryGetComponent<ITreeDamageable>(out ITreeDamageable treeDamageable))
             {
-                //Physics.IgnoreCollision(collider.GetComponent<SphereCollider>(), hitArea.GetComponent<BoxCollider>());
+                
                 //Play wood chopping sound
                 if (collider.TryGetComponent<Tree>(out Tree tree))
                 {
@@ -148,8 +148,9 @@ public class Player_TreeChopping : MonoBehaviour, ITreeDamageable {
 
     private void HandleAttack() {
         if (Input.GetMouseButtonDown(0)) {
-            if (animator != null) animator.SetTrigger("Attack");
-            FunctionTimer.Create(AnimationEvent_OnHit, .5f);
+            AnimationEvent_OnHit();
+           //if (animator != null) animator.SetTrigger("Attack");
+           // FunctionTimer.Create(AnimationEvent_OnHit, .5f);
         }
     }
 
